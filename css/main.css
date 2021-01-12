@@ -1,0 +1,131 @@
+.landing-page {
+  background-color: #000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.landh1 {
+  position: relative;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*The navbar animation*/
+.brackets a:before,
+.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+.brackets a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+.brackets a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+.brackets a:hover:before,
+.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+  background-color: transparent !important;
+}
+
+.navbar-item {
+  padding: 1rem 1.25rem;
+}
+
+.button-register {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #ffdd57;
+  border-color: #14db7b;
+}
+
+.button-gradient {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #ffffff;
+  background-color: #4f72e6;
+}
+
+.button:hover,
+.button.is-hovered {
+  color: #14db7b;
+  border-color: #ffdd57;
+}
+
+.column,
+.is-one-fifth {
+  padding-bottom: 3rem;
+}
+
+.glow:hover {
+  text-shadow: 0 0 10px #ffe600;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.plan-footer {
+  overflow-x: auto;
+}
+
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.q-style {
+  color: #95afba;
+  font-size: 3rem;
+  border-left: 0.25rem solid #def2c8;
+  padding-left: 1rem;
+}
+.a-style {
+  color: #def2c8;
+  font-size: 3rem;
+  border-left: 0.25rem solid #95afba;
+  padding-left: 1rem;
+}
+.td-style {
+  background-color: #4f72e6;
+  padding-bottom: 0rem;
+  color: #a3cef1;
+}
+
+.tile.is-child {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
