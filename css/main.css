@@ -10,6 +10,33 @@
   background-color: #000;
 }
 
+.button {
+  width: 100px;
+  height: 50px;
+  background-color: #14db7b;
+}
+
+.grid-left {
+  display: flex;
+  margin-left: 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 250px;
+}
+
+.grid-left h1 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .landh1 {
   position: relative;
   color: #ffffff;
@@ -17,7 +44,19 @@
 
 @media screen and (max-width: 768px) {
   .grid-container {
+    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .grid-left button {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .grid-left h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
   }
 }
 
