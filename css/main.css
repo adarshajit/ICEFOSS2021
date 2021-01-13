@@ -76,6 +76,38 @@
   margin-top: 100px;
 }
 
+.chief-guest {
+  display: grid;
+  background-color: #14db7b;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sheader {
+  position: relative;
+  top: 100px;
+  left: 40%;
+  font-size: 40px;
+}
+
+.cguest {
+  position: relative;
+  top: -75px;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 10px 10px #000;
+  border: 2px solid #000;
+}
+
+.infog {
+  position: relative;
+  top: 75px;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 10px 10px #000;
+  border: 2px solid #000;
+}
+
 @media screen and (max-width: 768px) {
   .grid-container {
     display: grid;
@@ -107,8 +139,53 @@
   .static {
     max-width: 350px;
   }
+
+  .sheader {
+    top: 100px;
+    left: 0%;
+    font-size: 10px;
+  }
+
+  .cguest {
+    position: relative;
+    right: 70px;
+    left: 0;
+    max-width: 350px;
+    align-items: center;
+  }
+
+  .infog {
+    position: relative;
+    top: -70px;
+    max-width: 350px;
+    align-items: center;
+    right: 70px;
+    left: 0;
+  }
+
+  .chief-guest {
+    grid-template-columns: 1fr;
+  }
 }
 
+@media screen and (max-width: 400px) {
+  .cguest {
+    position: relative;
+    right: 0;
+    left: -30px;
+    max-width: 300px;
+    align-items: center;
+  }
+
+  .infog {
+    position: relative;
+    top: -70px;
+    max-width: 300px;
+    align-items: center;
+    right: 0;
+    left: 0;
+  }
+}
 /*The navbar animation*/
 .brackets a:before,
 .brackets a:after {
@@ -146,31 +223,6 @@ a.navbar-item:hover {
 
 .navbar-item {
   padding: 1rem 1.25rem;
-}
-
-.button-register {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  color: #ffdd57;
-  border-color: #14db7b;
-}
-
-.button-gradient {
-  background-repeat: no-repeat;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  color: #ffffff;
-  background-color: #4f72e6;
-}
-
-.button:hover,
-.button.is-hovered {
-  color: #14db7b;
-  border-color: #ffdd57;
 }
 
 .column,
