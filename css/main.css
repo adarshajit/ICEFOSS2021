@@ -19,17 +19,41 @@
   border-radius: 25px;
 }
 
-.register p {
+.register {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  background-color: #14db7b;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #000;
+  z-index: 2;
+}
+
+.back {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 25px;
+  z-index: 2;
+}
+
+.register {
   padding-top: 12px;
   color: #000;
   font-size: 20px;
   font-weight: bold;
 }
 
-.register:hover {
+.register {
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  transform: translate(5px, 10px);
+  transform: translate(-5px, -10px);
+}
+
+.register:hover {
+  transform: translate(0px, 0px);
 }
 
 .grid-left {
@@ -67,6 +91,10 @@
   }
 
   .register {
+    display: none;
+  }
+
+  .back {
     display: none;
   }
 
