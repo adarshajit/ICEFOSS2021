@@ -37,12 +37,12 @@ particlesJS("particle-js", {
         }
       },
       "size": {
-        "value": 11.83721462448409,
+        "value": 12.83721462448409,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 40,
-          "size_min": 0.1,
+          "size_min": 0.5,
           "sync": false
         }
       },
