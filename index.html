@@ -1,44 +1,35 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ICEFOSS-2021</title>
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" href="css/bulma-timeline.min.css" />
-    <link rel="stylesheet" href="css/bulma-divider.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/particle.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-      #map {
-        height: 400px; /* The height is 400 pixels */
-        width: 100%; /* The width is the width of the web page */
-      }
-    </style>
-  </head>
-  <body>
-    <nav
-      class="navbar landing-page is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICEFOSS-2021</title>
+  <link rel="stylesheet" href="css/bulma.min.css" />
+  <link rel="stylesheet" href="css/bulma-timeline.min.css" />
+  <link rel="stylesheet" href="css/bulma-divider.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/particle.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    #map {
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <nav class="navbar landing-page is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item has-text-white" href="#home"
-          >ICEFOSS<span class="has-text-weight-semibold">2021</span></a
-        >
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
+        <a class="navbar-item has-text-white" href="#home">ICEFOSS<span class="has-text-weight-semibold">2021</span></a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -47,129 +38,86 @@
       <div id="navbar" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-start brackets">
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#about"
-              ><p>About</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#person"
-              ><p>Speakers</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#workshop"
-              ><p>Workshops</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#WomenHackathon"
-              ><p>Women Hackathon</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#register"
-              ><p>Register</p></a
-            >
-            <a class="navbar-item has-text-white has-text-centered" href="#faq"
-              ><p>F.A.Q</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#workshop_schedule"
-              >Workshop Schedule</a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#venue"
-              ><p>Venue</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#contact"
-              ><p>Contact Us</p></a
-            >
+            <a class="navbar-item has-text-white has-text-centered" href="#about">
+              <p>About</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#person">
+              <p>Speakers</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#workshop">
+              <p>Workshops</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#WomenHackathon">
+              <p>Women Hackathon</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#register">
+              <p>Register</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#faq">
+              <p>F.A.Q</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#workshop_schedule">Workshop Schedule</a>
+            <a class="navbar-item has-text-white has-text-centered" href="#venue">
+              <p>Venue</p>
+            </a>
+            <a class="navbar-item has-text-white has-text-centered" href="#contact">
+              <p>Contact Us</p>
+            </a>
           </div>
         </div>
       </div>
     </nav>
 
     <section id="home">
-      <!-- <div  class="hero-body">
-        <div class="grid-left">
-          <h1 >ICEFOSS 2021</h1>
-          <div class="btn-two back">
-            <div class="register"><p>Register</p></div>
+      <div style="width: 100%;" id="particle-js">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+              <div class="column is-5">
+                <figure class="image is-4by3">
+                  <img class="static" src="Assets/static.gif" alt="Description">
+                </figure>
+              </div>
+              <div class="column is-6 is-offset-1">
+                <h1 class="title is-2">
+                  ICEFOSS 2021
+                </h1>
+
+                <br>
+                <div class=" is-hidden-mobile back has-text-centered">
+                  <div class="register button ">
+                    <p>Register</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="grid-right">
-          <img src="Assets/static.gif" class="static" alt="" />
-        </div>
-      </div> -->
-      <div style="width: 100%;" id="particle-js">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="columns is-vcentered">
-                <div class="column is-5">
-                    <figure class="image is-4by3">
-                        <img class="static" src="Assets/static.gif" alt="Description">
-                    </figure>
-                </div>
-                <div class="column is-6 is-offset-1">
-                    <h1 class="title is-2">
-                      ICEFOSS 2021
-                    </h1>
-                  
-                    <br>
-                    <div class=" is-hidden-mobile back has-text-centered">
-                      <div class="register button "><p>Register</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
       </div>
     </section>
 
     <section id="about">
-      <div class="container">
+      <!-- <div class="container">
         <div class="columns" style="padding-bottom: 3rem; padding-top: 3rem">
           <div class="column">
-            <p
-              class="has-text-centered is-size-3"
-              style="padding-top: 3rem; color: #606ae7"
-            >
+            <p class="has-text-centered is-size-3" style="padding-top: 3rem; color: #606ae7">
               About ICEFOSS
             </p>
-            <p
-              class="is-size-4 has-text-centered"
-              style="padding-top: 3rem; padding-bottom: 3rem"
-            >
+            <p class="is-size-4 has-text-centered" style="padding-top: 3rem; padding-bottom: 3rem">
               ICEFOSS is a Free Software Conference organized by FISAT Free
               Software Cell (FFSC). ICEFOSS 2019, scheduled on February 19,20
               2019 includes Workshops covering different aspects of Free
               Software. ICEFOSS 2019 is the seventh edition of this conference.
               To know about the past conferences
-              <a href="http://icefoss.fisat.ac.in/2017/index.html"
-                >click here.</a
-              >
+              <a href="http://icefoss.fisat.ac.in/2017/index.html">click here.</a>
             </p>
           </div>
           <div class="column">
-            <p
-              class="bd-notification is-primary has-text-centered is-size-3"
-              style="padding-top: 3rem; color: #606ae7"
-            >
+            <p class="bd-notification is-primary has-text-centered is-size-3" style="padding-top: 3rem; color: #606ae7">
               About FISAT
             </p>
-            <p
-              class="is-size-4 has-text-centered"
-              style="padding-top: 3rem; padding-bottom: 3rem"
-            >
-              <a href="http://www.fisat.ac.in/"
-                >Federal Institute of Science And Technology (FISAT)</a
-              >
+            <p class="is-size-4 has-text-centered" style="padding-top: 3rem; padding-bottom: 3rem">
+              <a href="http://www.fisat.ac.in/">Federal Institute of Science And Technology (FISAT)</a>
               was established in 2002 under the aegis of Federal Bank Officers'
               Association Educational Society (FBOAES). The college has carved a
               niche for itself in education world, eloquently demonstrated by
@@ -180,7 +128,86 @@
           </div>
         </div>
       </div>
-    </section>
+      </section> -->
+       <div class="hero is-white is-halfheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered reverse-columns">
+            <div class="column
+            is-10-mobile is-offset-1-mobile
+            is-10-tablet is-offset-1-tablet
+            is-5-desktop is-offset-1-desktop
+            is-5-widescreen is-offset-1-widescreen
+            is-5-fullhd is-offset-1-fullhd" data-aos="fade-down">
+              <h1 class="title titled is-1 mb-6">
+                About ICEFOSS
+              </h1>
+              <h2 class=" subtitled subtitle  is-4 has-text-weight-normal is-family-sans-serif">
+                ICEFOSS is a Free Software Conference organized by FISAT Free
+              Software Cell (FFSC). ICEFOSS 2019, scheduled on February 19,20
+              2019 includes Workshops covering different aspects of Free
+              Software. ICEFOSS 2019 is the seventh edition of this conference.
+              To know about the past conferences
+              </h2>
+              <div class="buttons">
+                <button href="http://icefoss.fisat.ac.in/2017/index.html" class="button is-black">Click Here</button>
+              </div>
+            </div>
+            <div data-aos="fade-right" class="column
+            is-10-mobile is-offset-1-mobile
+            is-10-tablet is-offset-1-tablet
+            is-4-desktop is-offset-1-desktop
+            is-4-widescreen is-offset-1-widescreen
+            is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square">
+                <img src="/images/foss.png">
+              </figure>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+       </div>
+
+      <div class="hero is-white is-halfheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns  is-vcentered">
+              <div data-aos="fade-left" class="column
+              is-10-mobile is-offset-1-mobile
+              is-10-tablet is-offset-1-tablet
+              is-4-desktop is-offset-1-desktop
+              is-4-widescreen is-offset-1-widescreen
+              is-4-fullhd is-offset-1-fullhd">
+                <figure class="image is-square">
+                  <img src="/images/college.jpg">
+                </figure>
+              </div>
+              <div data-aos="fade-down" class="column
+              is-10-mobile is-offset-1-mobile
+              is-10-tablet is-offset-1-tablet
+              is-5-desktop is-offset-1-desktop
+              is-5-widescreen is-offset-1-widescreen
+              is-5-fullhd is-offset-1-fullhd">
+                <h1 class="titled title is-1 mb-6">
+                  About FISAT
+                </h1>
+                <h2 class="subtitled subtitle">
+                  Federal Institute of Science And Technology (FISAT)</a>
+              was established in 2002 under the aegis of Federal Bank Officers'
+              Association Educational Society (FBOAES). The college has carved a
+              niche for itself in education world, eloquently demonstrated by
+              the flying colors attained by its students in academics,
+              placements as well as in extra curricular and co-curricular
+              activities.
+                </h2>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
     <section id="chief">
       <h1 class="sheader">Cheif Guest</h1>
@@ -189,9 +216,7 @@
         <div class="grid-left">
           <img
             src="https://avatars0.githubusercontent.com/u/44795918?s=400&u=58605cc69e39b6ef312136967e74040d79404933&v=4"
-            class="cguest"
-            alt=""
-          />
+            class="cguest" alt="" />
         </div>
 
         <div class="grid-right">
@@ -203,10 +228,7 @@
     <section id="person" style="background: #ecf0fa">
       <!-- style="background: linear-gradient(270deg,#ecf0fa,#fff);">-->
       <div class="container" style="padding-top: 3rem">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-bottom: 1rem"
-        >
+        <div class="title has-text-centered" style="color: #606ae7; padding-bottom: 1rem">
           Speakers
         </div>
 
@@ -216,10 +238,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Naufal-Go.jpeg"
-                    alt="Naful Ibrahim"
-                  />
+                  <img src="images/Speakers/Naufal-Go.jpeg" alt="Naful Ibrahim" />
                 </figure>
               </div>
               <div class="card-content">
@@ -228,10 +247,7 @@
                     <p class="title is-4">
                       Naufal Ibrahim
                       <a href="https://www.linkedin.com/in/noufalibrahim/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">
@@ -247,10 +263,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Haridas-Hadoop.jpeg"
-                    alt="Haridas N"
-                  />
+                  <img src="images/Speakers/Haridas-Hadoop.jpeg" alt="Haridas N" />
                 </figure>
               </div>
               <div class="card-content">
@@ -260,10 +273,7 @@
                       Haridas N
 
                       <a href="https://www.linkedin.com/in/haridasn/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">
@@ -279,10 +289,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Johny-DockerKubernetes.jpeg"
-                    alt="Johny James"
-                  />
+                  <img src="images/Speakers/Johny-DockerKubernetes.jpeg" alt="Johny James" />
                 </figure>
               </div>
               <div class="card-content">
@@ -291,10 +298,7 @@
                     <p class="title is-4">
                       Johny James
                       <a href="https://www.linkedin.com/in/johnyjames/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">
@@ -314,10 +318,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Midhun-DockerKubernetes.jpeg"
-                    alt="Midhun K"
-                  />
+                  <img src="images/Speakers/Midhun-DockerKubernetes.jpeg" alt="Midhun K" />
                 </figure>
               </div>
               <div class="card-content">
@@ -325,13 +326,8 @@
                   <div class="media-content">
                     <p class="title is-4">
                       Midhun K
-                      <a
-                        href="https://www.linkedin.com/in/midhun-kandoth-434a7075/"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                      <a href="https://www.linkedin.com/in/midhun-kandoth-434a7075/">
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                         <!-- <img src="images/icons/linkedin.png"  style="float: right">-->
                       </a>
                     </p>
@@ -356,14 +352,9 @@
                   <div class="media-content">
                     <p class="title is-4">
                       Pankaj Kumar
-                      <a
-                        href="https://www.linkedin.com/in/pankaj-kumar-g-1aa9b885/"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fas fa-university fa-lg"
-                        ></i
-                        ><!--<img src="images/icons/linkedin.png"  style="float: right">-->
+                      <a href="https://www.linkedin.com/in/pankaj-kumar-g-1aa9b885/">
+                        <i style="float: right; color: #000" class="fas fa-university fa-lg"></i>
+                        <!--<img src="images/icons/linkedin.png"  style="float: right">-->
                       </a>
                     </p>
                     <p class="subtitle is-6">
@@ -388,10 +379,7 @@
                     <p class="title is-4">
                       Adam Shamsudeen
                       <a href="https://www.linkedin.com/in/adamshamsudeen/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">Research Engineer at Saama</p>
@@ -419,10 +407,7 @@
                       Dr.Sreeraj M
 
                       <a href="http://fisat.ac.in/staff-profile.php?fid=114">
-                        <i
-                          style="float: right; color: #000"
-                          class="fas fa-university fa-lg"
-                        ></i>
+                        <i style="float: right; color: #000" class="fas fa-university fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">Assistant Professor,FISAT</p>
@@ -436,10 +421,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/256x256.png"
-                    alt="Sandhini S"
-                  />
+                  <img src="https://bulma.io/images/placeholders/256x256.png" alt="Sandhini S" />
                 </figure>
               </div>
               <div class="card-content">
@@ -448,13 +430,8 @@
                     <p class="title is-4">
                       SANDHINI S
 
-                      <a
-                        href="https://www.linkedin.com/in/sandhini-s-a7499870/?originalSubdomain=in"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                      <a href="https://www.linkedin.com/in/sandhini-s-a7499870/?originalSubdomain=in">
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">Fellow,ICFOSS</p>
@@ -468,10 +445,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/keerthana.jpg"
-                    alt="Keerthana Ashok"
-                  />
+                  <img src="images/Speakers/keerthana.jpg" alt="Keerthana Ashok" />
                 </figure>
               </div>
               <div class="card-content">
@@ -480,13 +454,8 @@
                     <p class="title is-4">
                       Keerthana Ashok
 
-                      <a
-                        href="https://www.linkedin.com/in/keerthana-ashok03/?originalSubdomain=in"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+                      <a href="https://www.linkedin.com/in/keerthana-ashok03/?originalSubdomain=in">
+                        <i style="float: right; color: #000" class="fab fa-linkedin fa-lg"></i>
                       </a>
                     </p>
                     <p class="subtitle is-6">Fellow,ICFOSS</p>
@@ -500,10 +469,7 @@
     </section>
 
     <section id="workshop" class="is-large" style="background-color: #4f72e6">
-      <div
-        class="title has-text-centered has-text-white"
-        style="padding-top: 3rem; padding-bottom: 1rem"
-      >
+      <div class="title has-text-centered has-text-white" style="padding-top: 3rem; padding-bottom: 1rem">
         Workshop
       </div>
       <div class="timeline is-centered" style="padding: 2rem">
@@ -512,11 +478,8 @@
             <img src="images/circle_yellow.png" />
           </div>
           <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#hackthon_modal"
-              >FOSS Women Hackathon<i class="fas fa-angle-right"></i
-            ></a>
+            <a class="heading is-size-5 title glow has-text-white modal-button" data-target="#hackthon_modal">FOSS Women
+              Hackathon<i class="fas fa-angle-right"></i></a>
 
             <p class="heading has-text-white is-size-9 subtitle">
               19 and 20 Feb 2019
@@ -529,11 +492,8 @@
             <img src="images/circle_yellow.png" />
           </div>
           <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#go_modal"
-              >Go Programming<i class="fas fa-angle-right"></i
-            ></a>
+            <a class="heading is-size-5 title glow has-text-white modal-button" data-target="#go_modal">Go Programming<i
+                class="fas fa-angle-right"></i></a>
             <p class="heading has-text-white is-size-9 subtitle">19 Feb 2019</p>
             <p class="heading has-text-white is-size-9 subtitle">
               10:30am - 04:15pm
@@ -546,13 +506,8 @@
             <img src="images/circle_yellow.png" />
           </div>
           <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#hadoop_modal"
-              >Introduction to Big Data and Hadoop<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
+            <a class="heading is-size-5 title glow has-text-white modal-button" data-target="#hadoop_modal">Introduction
+              to Big Data and Hadoop<i class="fas fa-angle-right"></i></a>
             <p class="heading has-text-white is-size-9 subtitle">19 Feb 2019</p>
             <p class="heading has-text-white is-size-9 subtitle">
               09:15am - 04:15pm
@@ -565,13 +520,8 @@
             <img src="images/circle_yellow.png" />
           </div>
           <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#docker_modal"
-              >Introduction to Docker and Kubernetes<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
+            <a class="heading is-size-5 title glow has-text-white modal-button" data-target="#docker_modal">Introduction
+              to Docker and Kubernetes<i class="fas fa-angle-right"></i></a>
             <p class="heading has-text-white is-size-9 subtitle">20 Feb 2019</p>
             <p class="heading has-text-white is-size-9 subtitle">
               09:15am - 04:15pm
@@ -584,13 +534,8 @@
             <img src="images/circle_yellow.png" />
           </div>
           <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#spark_modal"
-              >Introduction to Machine Learning using Apache Spark<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
+            <a class="heading is-size-5 title glow has-text-white modal-button" data-target="#spark_modal">Introduction
+              to Machine Learning using Apache Spark<i class="fas fa-angle-right"></i></a>
             <p class="heading has-text-white is-size-9 subtitle">20 Feb 2019</p>
             <p class="heading has-text-white is-size-9 subtitle">
               09:15am - 04:15pm
@@ -602,10 +547,7 @@
 
     <section id="WomenHackathon" style="background-color: #ecf0fa">
       <div class="container">
-        <div
-          class="title has-text-centered"
-          style="padding-top: 3rem; padding-bottom: 1.5rem"
-        >
+        <div class="title has-text-centered" style="padding-top: 3rem; padding-bottom: 1.5rem">
           Women Hackathon
         </div>
         <div class="columns is-centered">
@@ -624,10 +566,7 @@
                 industrial practices and will be given a detailed introduction
                 into various domains by leading industry experts.
               </li>
-              <li
-                class="subtitle is-4 has-text-centered"
-                style="padding-bottom: 3rem"
-              >
+              <li class="subtitle is-4 has-text-centered" style="padding-bottom: 3rem">
                 On the 2nd Day, participants have a chance to showcase their
                 creativity and skillset by brainstorming their ideas and making
                 a prototype with what have they have been taught the previous
@@ -821,10 +760,8 @@
 
     <section id="register">
       <div class="container">
-        <p
-          class="bd-notification title is-primary has-text-centered is-size-3"
-          style="padding-top: 3rem; color: #606ae7; margin-bottom: 2rem"
-        >
+        <p class="bd-notification title is-primary has-text-centered is-size-3"
+          style="padding-top: 3rem; color: #606ae7; margin-bottom: 2rem">
           Register
         </p>
         <p class="has-text-centered is-size-5" style="margin-bottom: 1rem">
@@ -842,10 +779,7 @@
           <div class="column">
             <p class="has-text-centered is-size-5">
               Pay using our UPI ID<br />
-              <button
-                class="button is-info"
-                style="margin-top: 1rem; margin-bottom: 1rem"
-              >
+              <button class="button is-info" style="margin-top: 1rem; margin-bottom: 1rem">
                 icefoss@federal
               </button>
             </p>
@@ -853,24 +787,16 @@
 
           <div class="is-divider-vertical" data-content="OR"></div>
           <div class="column has-text-centered">
-            <img
-              style="align-items: center"
-              src="images/QRCode.png"
-              width="150"
-              height="150"
-            />
+            <img style="align-items: center" src="images/QRCode.png" width="150" height="150" />
           </div>
           <div class="is-divider-vertical" data-content="OR"></div>
           <div class="column has-text-centered">
             <p class="has-text-centered is-size-5">Debit/Credit card</p>
             <p class="is-size-7">(Payment Gateway charges extra)</p>
-            <a
-              class="button is-large is-rounded button-gradient is-link has-text-centered"
-              class="is-center"
+            <a class="button is-large is-rounded button-gradient is-link has-text-centered" class="is-center"
               style="margin-top: 1rem; margin-bottom: 1rem"
-              href="https://www.payumoney.com/paybypayumoney/#/E7F825C9506BDD9EFBF6D949BCEF2FEB"
-              >Pay Now</a
-            ><br /><br /><br />
+              href="https://www.payumoney.com/paybypayumoney/#/E7F825C9506BDD9EFBF6D949BCEF2FEB">Pay
+              Now</a><br /><br /><br />
           </div>
         </div>
 
@@ -878,44 +804,31 @@
           After payment, click on the Register button to register by giving
           details including payment information
           <br />
-          <a
-            class="button is-large is-rounded button-gradient"
-            style="
+          <a class="button is-large is-rounded button-gradient" style="
               margin-top: 1rem;
               margin-top: 1.5rem;
               margin-bottom: 3rem;
               color: #000;
-            "
-            href="https://docs.google.com/forms/d/1gI5R68a3m0iHK_jkcwhzkpVEnCD4thIeI-36fIBHcww/"
-            >Register</a
-          ><br />
+            " href="https://docs.google.com/forms/d/1gI5R68a3m0iHK_jkcwhzkpVEnCD4thIeI-36fIBHcww/">Register</a><br />
         </p>
       </div>
     </section>
 
-    <section
-      id="faq"
-      style="padding-bottom: 3rem; background-color: #4f72e6"
-      class="has-text-centred"
-    >
+    <section id="faq" style="padding-bottom: 3rem; background-color: #4f72e6" class="has-text-centred">
       <div class="container">
-        <p
-          class="bd-notification is-primary has-text-centered is-size-3 has-text-white"
-          style="padding-top: 3rem; padding-bottom: 1rem; color: #606ae7"
-        >
+        <p class="bd-notification is-primary has-text-centered is-size-3 has-text-white"
+          style="padding-top: 3rem; padding-bottom: 1rem; color: #606ae7">
           F.A.Q
         </p>
 
         <table class="table is-fullwidth is-striped has-text-white">
           <tbody class="has-text-centred">
             <tr>
-              <td
-                style="
+              <td style="
                   background-color: #4f72e6;
                   padding-bottom: 0rem;
                   color: #a3cef1;
-                "
-              >
+                ">
                 <span class="q-style has-text-weight-light">Q. </span>
                 <span class="has-text-weight-bold">
                   How much will it cost me to participate in The Women
@@ -924,14 +837,12 @@
               </td>
             </tr>
             <tr>
-              <td
-                style="
+              <td style="
                   background-color: #4f72e6;
                   padding-top: 0rem;
                   border-top-style: 0rem;
                   color: #a3cef1;
-                "
-              >
+                ">
                 <span class="a-style has-text-weight-light">A. </span>For Women
                 Hackathon the registration fee is ₹100 only(P.S: You do NOT have
                 to pay the other Rs 350 for this event). Food and refreshments
@@ -944,28 +855,22 @@
         <table class="table is-fullwidth is-striped has-text-white">
           <tbody class="has-text-centred">
             <tr>
-              <td
-                style="
+              <td style="
                   background-color: #4f72e6;
                   padding-bottom: 0rem;
                   color: #a3cef1;
-                "
-              >
+                ">
                 <span class="q-style has-text-weight-light">Q. </span>
-                <span class="has-text-weight-bold"
-                  >Will Accommodation be provided for the participants?</span
-                >
+                <span class="has-text-weight-bold">Will Accommodation be provided for the participants?</span>
               </td>
             </tr>
             <tr>
-              <td
-                style="
+              <td style="
                   background-color: #4f72e6;
                   padding-top: 0rem;
                   border-top-style: 0rem;
                   color: #a3cef1;
-                "
-              >
+                ">
                 <span class="a-style has-text-weight-light">A. </span>
                 Accommodation will be provided but participants will have to pay
                 a nominal fee of ₹100 for it.
@@ -978,10 +883,8 @@
           <tbody class="has-text-centred">
             <tr>
               <td class="td-style">
-                <span class="q-style has-text-weight-light">Q. </span
-                ><span class="has-text-weight-bold">
-                  Can we take part in the Women Hackathon as a team?</span
-                >
+                <span class="q-style has-text-weight-light">Q. </span><span class="has-text-weight-bold">
+                  Can we take part in the Women Hackathon as a team?</span>
               </td>
             </tr>
             <tr>
@@ -1001,8 +904,7 @@
                 <span class="q-style has-text-weight-light">Q. </span>
                 <span class="has-text-weight-bold">
                   Will I have to pay ₹350 ,if I attend just one day of the
-                  programme?</span
-                >
+                  programme?</span>
               </td>
             </tr>
             <tr>
@@ -1056,15 +958,9 @@
       </div>
     </section>
 
-    <section
-      id="workshop_schedule"
-      style="background: #ecf0fa; padding-bottom: 3rem"
-    >
+    <section id="workshop_schedule" style="background: #ecf0fa; padding-bottom: 3rem">
       <div class="container">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-bottom: 1rem; padding-top: 3rem"
-        >
+        <div class="title has-text-centered" style="color: #606ae7; padding-bottom: 1rem; padding-top: 3rem">
           Workshop Schedule
         </div>
 
@@ -1081,9 +977,7 @@
             <div class="content">
               <div class="tile is-ancestor is-vertical">
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">09:30am - 10:15am</p>
                   </div>
                   <div class="tile is-child box">
@@ -1099,9 +993,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">10:15am - 11:00am</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1122,9 +1014,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">11:00am - 11:15am</p>
                   </div>
                   <div class="tile is-child box">
@@ -1133,9 +1023,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">11:15am - 01:15pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1156,9 +1044,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">01:15pm - 01:45pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1167,9 +1053,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">01:45pm - 03:00pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1190,9 +1074,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">03:00pm - 03:15pm</p>
                   </div>
                   <div class="tile is-child box is-6">
@@ -1209,9 +1091,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">03:15pm - 04:15pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1232,9 +1112,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">04:15pm - 04:30pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1245,9 +1123,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">04:30pm - 06:00pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1274,9 +1150,7 @@
             <div class="content">
               <div class="tile is-ancestor is-vertical">
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">09:30am - 10:00am</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1298,9 +1172,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">10:00am - 11:30am</p>
                   </div>
                   <div class="tile is-child box">
@@ -1325,9 +1197,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">11:30am - 11:45am</p>
                   </div>
                   <div class="tile is-child box">
@@ -1336,9 +1206,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">11:45am - 01:15pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1360,9 +1228,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">01:15pm - 01:45pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1371,9 +1237,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">01:45pm - 03:00pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1395,9 +1259,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">03:00pm - 03:15pm</p>
                   </div>
                   <div class="tile is-child box is-6">
@@ -1415,9 +1277,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">03:15pm - 04:15pm</p>
                   </div>
                   <div class="tile is-child box is-3">
@@ -1439,9 +1299,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">04:15pm - 04:30pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1452,9 +1310,7 @@
                 </div>
 
                 <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
+                  <div class="tile is-child box has-background-grey-lighter is-3">
                     <p class="subtitle has-text-centered">04:30pm - 06:00pm</p>
                   </div>
                   <div class="tile is-child box">
@@ -1472,10 +1328,7 @@
 
     <section id="venue">
       <div class="container">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-top: 4rem"
-        >
+        <div class="title has-text-centered" style="color: #606ae7; padding-top: 4rem">
           Venue
         </div>
         <div class="columns is-vcentered">
@@ -1488,9 +1341,7 @@
             </p>
 
             <p class="is-size-4 has-text-centered" style="padding-bottom: 3rem">
-              <a href="http://fisat.ac.in/pages/conveyance-facilities"
-                >Click here for conveyance details.</a
-              >
+              <a href="http://fisat.ac.in/pages/conveyance-facilities">Click here for conveyance details.</a>
             </p>
           </div>
 
@@ -1502,16 +1353,10 @@
     </section>
 
     <section id="contact" style="padding-bottom: 3rem; background: #ecf0fa">
-      <p
-        class="bd-notification is-primary has-text-centered is-size-3"
-        style="padding-top: 3rem; color: #606ae7"
-      >
+      <p class="bd-notification is-primary has-text-centered is-size-3" style="padding-top: 3rem; color: #606ae7">
         Contact
       </p>
-      <p
-        class="has-text-centered"
-        style="padding-bottom: 1rem; padding-top: 1rem"
-      >
+      <p class="has-text-centered" style="padding-bottom: 1rem; padding-top: 1rem">
         <i class="far fa-envelope"></i> ffsc@fisat.ac.in
       </p>
       <p class="has-text-centered" style="padding-bottom: 1rem">
@@ -1542,10 +1387,18 @@
           <div class="border1"></div>
           <!--for the underline -->
           <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Search</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="#"><li>About</li></a>
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>Search</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="#">
+              <li>About</li>
+            </a>
           </ul>
         </div>
 
@@ -1555,10 +1408,18 @@
           <div class="border1"></div>
           <!--for the underline -->
           <ul>
-            <a href="#"><li>Indian</li></a>
-            <a href="#"><li>Chinese</li></a>
-            <a href="#"><li>Mexican</li></a>
-            <a href="#"><li>Italian</li></a>
+            <a href="#">
+              <li>Indian</li>
+            </a>
+            <a href="#">
+              <li>Chinese</li>
+            </a>
+            <a href="#">
+              <li>Mexican</li>
+            </a>
+            <a href="#">
+              <li>Italian</li>
+            </a>
           </ul>
         </div>
 
@@ -1603,11 +1464,9 @@
     <script src="js/modal.js"></script>
     <script src="js/expand-card.js"></script>
     <script src="js/particle.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap"></script>
+  </div>
+</body>
 
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap"
-    ></script>
-  </body>
 </html>
