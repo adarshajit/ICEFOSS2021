@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/particle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <section id="home">
+        <div
+          class="flex items-center justify-around flex-wrap"
+          id="particle-js"
+        >
+          <figure>
+            <img class="static" src="Assets/static.gif" alt="Description" />
+          </figure>
+          <div>
+            <h1 class="title inline-block align-middle flex justify-end p-2">
+              ICEFOSS 2021
+            </h1>
+
+            <div class="back items-center hidden lg:block">
+              <div class="register button">
+                <p>Register</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="demo hidden md:block" id="section03">
+        <h1></h1>
+        <a href="#about"><span> </span> </a>
+      </section>
+      <section class="py-4 font-serif lg:px-40">
+        <div class="flex flex-wrap items-center justify-around">
+          <div>
+            <div class="max-w-xl">
+              <h1 class="title titled">About ICEFOSS</h1>
+              <h2 class="subtitled subtitle">
+                ICEFOSS is a Free Software Conference organized by FISAT Free
+                Software Cell (FFSC). ICEFOSS 2019, scheduled on February 19,20
+                2019 includes Workshops covering different aspects of Free
+                Software. ICEFOSS 2019 is the ninth edition of this conference.
+                To know about the past conferences
+              </h2>
+            </div>
+            <span class="my-4">
+              <button
+                href="http://icefoss.fisat.ac.in/2017/index.html"
+                type="button"
+                class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              >
+                Click Here
+              </button>
+            </span>
+          </div>
+          <div>
+            <figure class="image">
+              <img src="/Assets/foss.png" />
+            </figure>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-around">
+          <div class="border-2">
+            <figure class="image max-w-2xl">
+              <img src="/Assets/fisat.png" />
+            </figure>
+          </div>
+          <div class="max-w-xl">
+            <h1 class="title titled">About FISAT</h1>
+            <h2 class="subtitled subtitle">
+              Federal Institute of Science And Technology (FISAT) was
+              established in 2002 under the aegis of Federal Bank Officers'
+              Association Educational Society (FBOAES). The college has carved a
+              niche for itself in education world, eloquently demonstrated by
+              the flying colors attained by its students in academics,
+              placements as well as in extra curricular and co-curricular
+              activities.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-wrap items-center justify-around">
+        <div class="infog"></div>
+        <img
+          src="https://avatars0.githubusercontent.com/u/44795918?s=400&u=58605cc69e39b6ef312136967e74040d79404933&v=4"
+          class="cguest"
+          alt=""
+        />
+      </section>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/smooth_scroll.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/expand-card.js"></script>
+    <script src="js/particle.js"></script>
+  </body>
+</html>
