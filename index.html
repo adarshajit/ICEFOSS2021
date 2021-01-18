@@ -19,24 +19,30 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> -->
   </head>
   <body>
     <div>
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+      <div class="topnav fixed w-full md:flex justify-center" id="myTopnav">
+        <a href="#home" class="active hover:box-shadow">Home</a>
         <a href="#about">About</a>
         <a href="#chief">Chief Guest</a>
         <a href="#speaker">Speaker</a>
+        <a href="#register">Register</a>
         <a href="#contact">Contact</a>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="shrink()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
       <section id="home">
         <div
-          class="flex items-center justify-around flex-wrap bg-cover"
+          class="flex items-center justify-around flex-wrap bg-cover lg:py-12"
           id="particle-js"
         >
           <figure>
@@ -107,14 +113,19 @@
         </div>
       </section>
       <section id="chief">
-        <div class="bg-green-600 py-6 h-screen">
-          <h2 class="title titled flex justify-around text-white my-6">
+        <div class="py-16 px-8 h-screen chief">
+          <h2 class="title titled flex justify-around text-black">
             Chief Guest
           </h2>
-          <div class="flex justify-around">
-            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
+
+          <div class="flex justify-around pt-10">
+            <div class="md:px-2 py-2 lg:px-2 py-2 w-72">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
-                <img class="w-full" src="Assets/foss.png" alt="foss" />
+                <img
+                  class="w-full"
+                  src="Assets/images_drjletha.png"
+                  alt="foss"
+                />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-2xl mb-2">Dr J Letha</div>
                   <div class="font-bold text-2xl mb-2">
@@ -124,46 +135,25 @@
               </div>
             </div>
           </div>
-          <div class="subtitled text-white p-20">
-            <div class="flex justify-center text-2xl">
-              3rd February, 11:00am
-            </div>
-            <div class="flex justify-center text-2xl">Main Seminar Hall</div>
-            <div class="flex justify-center text-2xl">
-              Federel Institute of Science And Technology
-            </div>
-            <div class="flex justify-center">(FISAT)</div>
-          </div>
         </div>
       </section>
       <section id="speaker">
-        <div class="py-4">
-          <h2 class="title titled flex justify-around text-black">Speakers</h2>
-          <div class="flex justify-around flex-wrap">
-            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
-              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
-                <img class="w-full" src="Assets/foss.png" alt="foss" />
-                <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Speaker 1</div>
-                  <div class="px-6 py-4 flex justify-center">
-                    <button class="border-none">
-                      <a>
-                        <i class="ph-linkedin-logo"></i>
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
+        <div class="py-16 py-20 item-center min-h-screen bg-yellow-200">
+          <div>
+            <h2 class="title titled flex justify-around text-black pb-16">
+              Speakers
+            </h2>
+          </div>
+          <div class="flex justify-center">
+            <div class="px-8 md:w-72">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                 <img class="w-full" src="Assets/sreeraj.jpg" alt="foss" />
                 <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Speaker 2</div>
+                  <div class="font-bold text-xl mb-2">Dr.Sreeraj M</div>
                   <div class="px-6 py-4 flex justify-center">
                     <button class="border-none">
-                      <a>
-                        <i class="ph-linkedin-logo"></i>
+                      <a href="http://fisat.ac.in/staff-profile.php?fid=114">
+                        <i class="fas fa-university fa-lg"></i>
                       </a>
                     </button>
                   </div>
@@ -173,14 +163,40 @@
           </div>
         </div>
       </section>
-      <section>
-        <div>
+      <section id="register">
+        <div
+          class="bg-blue-500 text-black py-6 h-80"
+          style="background-color: #14db7b"
+        >
           <h2 class="title titled flex justify-around text-black">Register</h2>
+          <div class="text-center subtitled">
+            Registration fee for the event is Rs 50(for non-fisatians) for two
+            days.
+          </div>
+          <div class="text-center subtitled">Pay using our UPI ID</div>
+          <div class="text-center subtitled">icefoss2020@apl</div>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              style="
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                background-color: #3273dc;
+              "
+            >
+              <a
+                href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
+                style="text-decoration: none; color: #fff"
+              >
+                UPI icefoss2020@apl</a
+              >
+            </button>
+          </div>
         </div>
       </section>
       <section id="contact">
-        <div class="bg-blue-500 text-white">
-          <h2 class="title titled flex justify-around text-white">
+        <div class="bg-yellow-200 text-black py-4 w-full h-3/4">
+          <h2 class="title titled flex justify-around text-black">
             Contact Us
           </h2>
           <div class="subtitled">
@@ -203,18 +219,24 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="bg-blue-700 text-white">
-          <div class="text-center">Made with Tailwind</div>
-          <div class="text-center">
-            Designed and Created by Adarsh Ajit, Paul Elias Sojan, Naveen B
-            Jacob
+      <section id="">
+        <div class="bg-black text-white h-52 py-4 items-center">
+          <div class="text-center subtitled py-4">Made with Tailwind</div>
+          <div class="text-center subtitled">
+            Designed and Created by
+            <a href="https://www.linkedin.com/in/naveen-b-jacob-229a81182/"
+              >Adarsh Ajit</a
+            >, <a>Paul Elias Sojan</a>,<a
+              href="https://www.linkedin.com/in/naveen-b-jacob-229a81182/"
+            >
+              Naveen B Jacob</a
+            >
           </div>
         </div>
       </section>
     </div>
     <script>
-      function myFunction() {
+      function shrink() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
           x.className += " responsive";
