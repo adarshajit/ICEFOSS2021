@@ -1,1600 +1,222 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ICEFOSS-2021</title>
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" href="css/bulma-timeline.min.css" />
-    <link rel="stylesheet" href="css/bulma-divider.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/particle.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <style>
-      #map {
-        height: 400px; /* The height is 400 pixels */
-        width: 100%; /* The width is the width of the web page */
-      }
-    </style>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> -->
   </head>
   <body>
-    <nav
-      class="navbar landing-page is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-white" href="#home"
-          >ICEFOSS<span class="has-text-weight-semibold">2021</span></a
-        >
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+    <div>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
       </div>
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-end">
-          <div class="navbar-start brackets">
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#about"
-              ><p>About</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#person"
-              ><p>Speakers</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#workshop"
-              ><p>Workshops</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#WomenHackathon"
-              ><p>Women Hackathon</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#register"
-              ><p>Register</p></a
-            >
-            <a class="navbar-item has-text-white has-text-centered" href="#faq"
-              ><p>F.A.Q</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#workshop_schedule"
-              >Workshop Schedule</a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#venue"
-              ><p>Venue</p></a
-            >
-            <a
-              class="navbar-item has-text-white has-text-centered"
-              href="#contact"
-              ><p>Contact Us</p></a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
+      <section id="home">
+        <div
+          class="flex items-center justify-around flex-wrap"
+          id="particle-js"
+        >
+          <figure>
+            <img class="static" src="Assets/static.gif" alt="Description" />
+          </figure>
+          <div>
+            <h1 class="title inline-block align-middle flex justify-end p-2">
+              ICEFOSS 2021
+            </h1>
 
-    <section id="home">
-      <!-- <div  class="hero-body">
-        <div class="grid-left">
-          <h1 >ICEFOSS 2021</h1>
-          <div class="btn-two back">
-            <div class="register"><p>Register</p></div>
-          </div>
-        </div>
-
-        <div class="grid-right">
-          <img src="Assets/static.gif" class="static" alt="" />
-        </div>
-      </div> -->
-      <div style="width: 100%;" id="particle-js">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="columns is-vcentered">
-                <div class="column is-5">
-                    <figure class="image is-4by3">
-                        <img class="static" src="Assets/static.gif" alt="Description">
-                    </figure>
-                </div>
-                <div class="column is-6 is-offset-1">
-                    <h1 class="title is-2">
-                      ICEFOSS 2021
-                    </h1>
-                  
-                    <br>
-                    <div class=" is-hidden-mobile back has-text-centered">
-                      <div class="register button "><p>Register</p></div>
-                    </div>
-                </div>
+            <div class="back items-center hidden lg:block">
+              <div class="register button">
+                <p>Register</p>
+              </div>
             </div>
-        </div>
-    </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="columns" style="padding-bottom: 3rem; padding-top: 3rem">
-          <div class="column">
-            <p
-              class="has-text-centered is-size-3"
-              style="padding-top: 3rem; color: #606ae7"
-            >
-              About ICEFOSS
-            </p>
-            <p
-              class="is-size-4 has-text-centered"
-              style="padding-top: 3rem; padding-bottom: 3rem"
-            >
-              ICEFOSS is a Free Software Conference organized by FISAT Free
-              Software Cell (FFSC). ICEFOSS 2019, scheduled on February 19,20
-              2019 includes Workshops covering different aspects of Free
-              Software. ICEFOSS 2019 is the seventh edition of this conference.
-              To know about the past conferences
-              <a href="http://icefoss.fisat.ac.in/2017/index.html"
-                >click here.</a
-              >
-            </p>
           </div>
-          <div class="column">
-            <p
-              class="bd-notification is-primary has-text-centered is-size-3"
-              style="padding-top: 3rem; color: #606ae7"
+        </div>
+      </section>
+      <section class="demo" id="section03">
+        <h1></h1>
+        <a href="#about"><span> </span> </a>
+      </section>
+      <section class="px-6 py-4 font-serif lg:px-40">
+        <div class="flex flex-wrap items-center justify-around">
+          <div>
+            <div class="max-w-xl">
+              <h1 class="title titled">About ICEFOSS</h1>
+              <h2 class="subtitled subtitle">
+                ICEFOSS is a Free Software Conference organized by FISAT Free
+                Software Cell (FFSC). ICEFOSS 2019, scheduled on February 19,20
+                2019 includes Workshops covering different aspects of Free
+                Software. ICEFOSS 2019 is the ninth edition of this conference.
+                To know about the past conferences
+              </h2>
+            </div>
+            <button
+              href="http://icefoss.fisat.ac.in/2017/index.html"
+              type="button"
+              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
             >
-              About FISAT
-            </p>
-            <p
-              class="is-size-4 has-text-centered"
-              style="padding-top: 3rem; padding-bottom: 3rem"
-            >
-              <a href="http://www.fisat.ac.in/"
-                >Federal Institute of Science And Technology (FISAT)</a
-              >
-              was established in 2002 under the aegis of Federal Bank Officers'
+              Click Here
+            </button>
+          </div>
+          <div>
+            <figure class="image">
+              <img src="/Assets/foss.png" />
+            </figure>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-around py-10">
+          <div class="border-2">
+            <figure class="image max-w-2xl">
+              <img src="/Assets/fisat.png" />
+            </figure>
+          </div>
+          <div class="max-w-xl lg:max-w-lg lg:px-10">
+            <h1 class="title titled">About FISAT</h1>
+            <h2 class="subtitled">
+              Federal Institute of Science And Technology (FISAT) was
+              established in 2002 under the aegis of Federal Bank Officers'
               Association Educational Society (FBOAES). The college has carved a
               niche for itself in education world, eloquently demonstrated by
               the flying colors attained by its students in academics,
               placements as well as in extra curricular and co-curricular
               activities.
-            </p>
+            </h2>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="chief">
-      <h1 class="sheader">Cheif Guest</h1>
-
-      <div class="grid-container chief-guest">
-        <div class="grid-left">
-          <img
-            src="https://avatars0.githubusercontent.com/u/44795918?s=400&u=58605cc69e39b6ef312136967e74040d79404933&v=4"
-            class="cguest"
-            alt=""
-          />
-        </div>
-
-        <div class="grid-right">
-          <div class="infog"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="person" style="background: #ecf0fa">
-      <!-- style="background: linear-gradient(270deg,#ecf0fa,#fff);">-->
-      <div class="container" style="padding-top: 3rem">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-bottom: 1rem"
-        >
-          Speakers
-        </div>
-
-        <div class="columns">
-          <div class="column is-one-fifth"></div>
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Naufal-Go.jpeg"
-                    alt="Naful Ibrahim"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Naufal Ibrahim
-                      <a href="https://www.linkedin.com/in/noufalibrahim/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">
-                      Free Software Consultant and Trainer
-                    </p>
+      </section>
+      <section>
+        <div class="bg-blue-700 py-6 h-screen">
+          <h2 class="title titled flex justify-around text-white my-6">
+            Chief Guest
+          </h2>
+          <div class="flex justify-around">
+            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img class="w-full" src="Assets/foss.png" alt="foss" />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-xl mb-2">Dr J Letha</div>
+                  <div class="font-bold text-xl mb-2">
+                    Pro-Vice-Chancellor, Jain University
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Haridas-Hadoop.jpeg"
-                    alt="Haridas N"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Haridas N
-
-                      <a href="https://www.linkedin.com/in/haridasn/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+          <div class="subtitled text-white p-6">
+            <div class="flex justify-center">3rd February, 11:00am</div>
+            <div class="flex justify-center">Main Seminar Hall</div>
+            <div class="flex justify-center">
+              Federel Institute of Science And Technology
+            </div>
+            <div class="flex justify-center">(FISAT)</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="py-4">
+          <h2 class="title titled flex justify-around text-black">Speakers</h2>
+          <div class="flex justify-around">
+            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img class="w-full" src="Assets/foss.png" alt="foss" />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-xl mb-2">Speaker 1</div>
+                  <div class="px-6 py-4 flex justify-center">
+                    <button class="border-none">
+                      <a>
+                        <i class="ph-linkedin-logo"></i>
                       </a>
-                    </p>
-                    <p class="subtitle is-6">
-                      Principal Engineer at Imaginea Technologies Inc.
-                    </p>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Johny-DockerKubernetes.jpeg"
-                    alt="Johny James"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Johny James
-                      <a href="https://www.linkedin.com/in/johnyjames/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
+            <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img class="w-full" src="Assets/foss.png" alt="foss" />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-xl mb-2">Speaker 2</div>
+                  <div class="px-6 py-4 flex justify-center">
+                    <button class="border-none">
+                      <a>
+                        <i class="ph-linkedin-logo"></i>
                       </a>
-                    </p>
-                    <p class="subtitle is-6">
-                      Senior Software Engineer at Myntra
-                    </p>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="columns">
-          <div class="column is-one-fifth"></div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/Midhun-DockerKubernetes.jpeg"
-                    alt="Midhun K"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Midhun K
-                      <a
-                        href="https://www.linkedin.com/in/midhun-kandoth-434a7075/"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
-                        <!-- <img src="images/icons/linkedin.png"  style="float: right">-->
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">
-                      Senior Software Engineer at United Layer
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by2">
-                  <img src="images/Speakers/pankaj.jpg" alt="Pankaj Kumar" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Pankaj Kumar
-                      <a
-                        href="https://www.linkedin.com/in/pankaj-kumar-g-1aa9b885/"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fas fa-university fa-lg"
-                        ></i
-                        ><!--<img src="images/icons/linkedin.png"  style="float: right">-->
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">
-                      Assistant Professor, <br />FISAT
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img src="images/Speakers/adam.jpg" alt="Adam Shamsudeen " />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Adam Shamsudeen
-                      <a href="https://www.linkedin.com/in/adamshamsudeen/">
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">Research Engineer at Saama</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      </section>
+      <section>
+        <div>
+          <h2 class="title titled flex justify-around text-black">Register</h2>
         </div>
+      </section>
+      <section>
+        <div class="bg-blue-500 text-white">
+          <h2 class="title titled flex justify-around text-white">
+            Contact Us
+          </h2>
+          <div class="subtitled">
+            <p class="text-center">
+              <i class="far fa-envelope"></i> ffsc@fisat.ac.in
+            </p>
+            <p class="text-center">
+              <i class="far fa-user"></i> Kajal Anna Koshy :
+              <i class="fas fa-mobile-alt"></i>+91 90619 11103
+            </p>
 
-        <div class="columns">
-          <div class="column is-one-fifth"></div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img src="images/Speakers/sreeraj.jpg" alt="Dr.Sreeraj M" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Dr.Sreeraj M
-
-                      <a href="http://fisat.ac.in/staff-profile.php?fid=114">
-                        <i
-                          style="float: right; color: #000"
-                          class="fas fa-university fa-lg"
-                        ></i>
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">Assistant Professor,FISAT</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/256x256.png"
-                    alt="Sandhini S"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      SANDHINI S
-
-                      <a
-                        href="https://www.linkedin.com/in/sandhini-s-a7499870/?originalSubdomain=in"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">Fellow,ICFOSS</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-fifth">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-3by3">
-                  <img
-                    src="images/Speakers/keerthana.jpg"
-                    alt="Keerthana Ashok"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4">
-                      Keerthana Ashok
-
-                      <a
-                        href="https://www.linkedin.com/in/keerthana-ashok03/?originalSubdomain=in"
-                      >
-                        <i
-                          style="float: right; color: #000"
-                          class="fab fa-linkedin fa-lg"
-                        ></i>
-                      </a>
-                    </p>
-                    <p class="subtitle is-6">Fellow,ICFOSS</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="workshop" class="is-large" style="background-color: #4f72e6">
-      <div
-        class="title has-text-centered has-text-white"
-        style="padding-top: 3rem; padding-bottom: 1rem"
-      >
-        Workshop
-      </div>
-      <div class="timeline is-centered" style="padding: 2rem">
-        <div class="timeline-item is-warning">
-          <div class="timeline-marker is-warning is-image is-32x32">
-            <img src="images/circle_yellow.png" />
-          </div>
-          <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#hackthon_modal"
-              >FOSS Women Hackathon<i class="fas fa-angle-right"></i
-            ></a>
-
-            <p class="heading has-text-white is-size-9 subtitle">
-              19 and 20 Feb 2019
+            <p class="text-center">
+              <i class="far fa-user"></i> Basil Leju :
+              <i class="fas fa-mobile-alt"></i>+91 97453 44089
+            </p>
+            <p class="text-center">
+              <i class="far fa-user"></i> Naveen B Jacob :
+              <i class="fas fa-mobile-alt"></i>+91 86063 30293
             </p>
           </div>
         </div>
-
-        <div class="timeline-item is-warning">
-          <div class="timeline-marker is-warning is-image is-32x32">
-            <img src="images/circle_yellow.png" />
-          </div>
-          <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#go_modal"
-              >Go Programming<i class="fas fa-angle-right"></i
-            ></a>
-            <p class="heading has-text-white is-size-9 subtitle">19 Feb 2019</p>
-            <p class="heading has-text-white is-size-9 subtitle">
-              10:30am - 04:15pm
-            </p>
+      </section>
+      <section>
+        <div class="bg-blue-700 text-white">
+          <div class="text-center">Made with Tailwind</div>
+          <div class="text-center">
+            Designed and Created by Adarsh Ajit, Paul Elias Sojan, Naveen B
+            Jacob
           </div>
         </div>
-
-        <div class="timeline-item is-warning">
-          <div class="timeline-marker is-warning is-image is-32x32">
-            <img src="images/circle_yellow.png" />
-          </div>
-          <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#hadoop_modal"
-              >Introduction to Big Data and Hadoop<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
-            <p class="heading has-text-white is-size-9 subtitle">19 Feb 2019</p>
-            <p class="heading has-text-white is-size-9 subtitle">
-              09:15am - 04:15pm
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item is-warning">
-          <div class="timeline-marker is-warning is-image is-32x32">
-            <img src="images/circle_yellow.png" />
-          </div>
-          <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#docker_modal"
-              >Introduction to Docker and Kubernetes<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
-            <p class="heading has-text-white is-size-9 subtitle">20 Feb 2019</p>
-            <p class="heading has-text-white is-size-9 subtitle">
-              09:15am - 04:15pm
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item is-warning">
-          <div class="timeline-marker is-warning is-image is-32x32">
-            <img src="images/circle_yellow.png" />
-          </div>
-          <div class="timeline-content">
-            <a
-              class="heading is-size-5 title glow has-text-white modal-button"
-              data-target="#spark_modal"
-              >Introduction to Machine Learning using Apache Spark<i
-                class="fas fa-angle-right"
-              ></i
-            ></a>
-            <p class="heading has-text-white is-size-9 subtitle">20 Feb 2019</p>
-            <p class="heading has-text-white is-size-9 subtitle">
-              09:15am - 04:15pm
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="WomenHackathon" style="background-color: #ecf0fa">
-      <div class="container">
-        <div
-          class="title has-text-centered"
-          style="padding-top: 3rem; padding-bottom: 1.5rem"
-        >
-          Women Hackathon
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-three-quartes">
-            <p class="subtitle is-4 has-text-centered">
-              ICEFOSS 2019, scheduled on February 19 and 20, brings to you
-              ‘Women Hackathon’, conducted in association with ICFOSS. It is a
-              hackathon exclusively for women which aims to connect and inspire
-              women, and be a stepping stone in furthering education and
-              technological career. Women hackathon provides both an opportunity
-              to create space that will make women leaders of technology.
-            </p>
-            <ul>
-              <li class="subtitle is-4 has-text-centered">
-                During DAY 1 of the Event, participants will be taught the best
-                industrial practices and will be given a detailed introduction
-                into various domains by leading industry experts.
-              </li>
-              <li
-                class="subtitle is-4 has-text-centered"
-                style="padding-bottom: 3rem"
-              >
-                On the 2nd Day, participants have a chance to showcase their
-                creativity and skillset by brainstorming their ideas and making
-                a prototype with what have they have been taught the previous
-                day.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modals for the Events-->
-    <div id="hackthon_modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Women Hackathon</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h2>Abstract</h2>
-            <p>
-              ICEFOSS 2019, scheduled on February 19 and 20, brings to you
-              ‘Women Hackathon’, conducted in association with ICFOSS. It is a
-              hackathon exclusively for women which aims to connect and inspire
-              women, and be a stepping stone in furthering education and
-              technological career. Women hackathon provides both an opportunity
-              to create space that will make women leaders of technology and an
-              attempt to solve social problems which can improve the lives of
-              women around the world.
-            </p>
-
-            <p>
-              During DAY 1 of the Event, participants will be taught the best
-              industrial practices and will be given a detailed introduction
-              into various domains by leading industry experts.
-            </p>
-            <p>
-              On the 2nd Day, participants have a chance to showcase their
-              creativity and skillset by brainstorming their ideas and making a
-              prototype with what have they have been taught the previous day.
-            </p>
-
-            <h2>Resource Person</h2>
-            <ul>
-              <li>Dr.Sreeraj M</li>
-              <li>Adam Shamsudeen</li>
-              <li>Sandhini S</li>
-              <li>Keerthana Ashok</li>
-            </ul>
-
-            <h2>Venue</h2>
-            <ul>
-              <li>19-02-2019 : M-Tech Lab (North Block)</li>
-              <li>20-02-2019 : Central Computing Facility L5</li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      </section>
     </div>
-
-    <div id="docker_modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Introduction to Docker and Kubernetes</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h2>Abstract</h2>
-            <p>
-              This session will introduce you to the basics of Docker and
-              Kubernetes. Widely used in industry Docker, provides
-              virtualizination capabilities. Docker is used to run software
-              packages called "containers". Originally designed by Google,
-              Kuberenetes is widely used in industry for automating application
-              deployment.
-            </p>
-
-            <h2>Prerequisite</h2>
-            <p>Basic GNU/Linux commands</p>
-
-            <h2>Resource Person</h2>
-            <ul>
-              <li>Midhun Kandoth</li>
-              <li>Johny James</li>
-            </ul>
-
-            <h2>Venue</h2>
-            <p>Central Computing Facility - L4</p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id="hadoop_modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Introduction to Big Data and Hadoop</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h2>Abstract</h2>
-            <p>
-              This session will introduce you well into the general concept of
-              how the scalable systems work, and covers its architecture,
-              programming models and mainly the thinking process. After giving
-              this base idea of scalable processing, we will see how the Hadoop
-              platform implements these ideas into real. There will be a hands
-              on for setting up Hadoop cluster and playing on it with different
-              work loads, so come prepared :).
-            </p>
-
-            <h2>Prerequisite</h2>
-            <p>Basic GNU/Linux commands</p>
-
-            <h2>Resource Person</h2>
-            <p>Haridas N</p>
-
-            <h2>Venue</h2>
-            <p>Central Computing Facility - L4</p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id="go_modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Go Programming</p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h2>Abstract</h2>
-            <p>
-              This session will introduce you to Go programming language. Go is
-              a compiled programming language designed at Google by Robert
-              Griesemer, Rob Pike, and Ken Thompson.
-            </p>
-
-            <h2>Prerequisite</h2>
-            <p>Basic GNU/Linux commands</p>
-
-            <h2>Resource Person</h2>
-            <p>Naufal Ibrahim</p>
-
-            <h2>Venue</h2>
-            <p>Central Computhing Facility - L5</p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div id="spark_modal" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">
-            Introduction to Machine Learning using Apache Spark
-          </p>
-          <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="content">
-            <h2>Abstract</h2>
-            <p>
-              This session will introduce you into the basics of Machine
-              Learning. Apache Spark is used for this purpose. Apache Spark is a
-              general-purpose cluster-computing framework used for big data
-              processing.
-            </p>
-
-            <h2>Prerequisite</h2>
-            <p>Basic GNU/Linux commands</p>
-
-            <h2>Resource Person</h2>
-            <p>Pankaj Kumar G</p>
-
-            <h2>Venue</h2>
-            <p>Central Computing Facility - L9</p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <section id="register">
-      <div class="container">
-        <p
-          class="bd-notification title is-primary has-text-centered is-size-3"
-          style="padding-top: 3rem; color: #606ae7; margin-bottom: 2rem"
-        >
-          Register
-        </p>
-        <p class="has-text-centered is-size-5" style="margin-bottom: 1rem">
-          Registration fee for the event is Rs 350(for non-fisatians) for two
-          days. The fee for women hackthon is Rs.100. There will be no spot
-          registration for non-fisatians.This includes workshop materials, lunch
-          and tea.
-        </p>
-        <div class="notification is-info has-text-centered is-size-5">
-          <strong>Note:</strong>
-          The Registration for women hackathon has been closed.
-        </div>
-
-        <div class="columns is-vcentered" style="margin-top: 1rem">
-          <div class="column">
-            <p class="has-text-centered is-size-5">
-              Pay using our UPI ID<br />
-              <button
-                class="button is-info"
-                style="margin-top: 1rem; margin-bottom: 1rem"
-              >
-                icefoss@federal
-              </button>
-            </p>
-          </div>
-
-          <div class="is-divider-vertical" data-content="OR"></div>
-          <div class="column has-text-centered">
-            <img
-              style="align-items: center"
-              src="images/QRCode.png"
-              width="150"
-              height="150"
-            />
-          </div>
-          <div class="is-divider-vertical" data-content="OR"></div>
-          <div class="column has-text-centered">
-            <p class="has-text-centered is-size-5">Debit/Credit card</p>
-            <p class="is-size-7">(Payment Gateway charges extra)</p>
-            <a
-              class="button is-large is-rounded button-gradient is-link has-text-centered"
-              class="is-center"
-              style="margin-top: 1rem; margin-bottom: 1rem"
-              href="https://www.payumoney.com/paybypayumoney/#/E7F825C9506BDD9EFBF6D949BCEF2FEB"
-              >Pay Now</a
-            ><br /><br /><br />
-          </div>
-        </div>
-
-        <p class="has-text-centered is-size-5">
-          After payment, click on the Register button to register by giving
-          details including payment information
-          <br />
-          <a
-            class="button is-large is-rounded button-gradient"
-            style="
-              margin-top: 1rem;
-              margin-top: 1.5rem;
-              margin-bottom: 3rem;
-              color: #000;
-            "
-            href="https://docs.google.com/forms/d/1gI5R68a3m0iHK_jkcwhzkpVEnCD4thIeI-36fIBHcww/"
-            >Register</a
-          ><br />
-        </p>
-      </div>
-    </section>
-
-    <section
-      id="faq"
-      style="padding-bottom: 3rem; background-color: #4f72e6"
-      class="has-text-centred"
-    >
-      <div class="container">
-        <p
-          class="bd-notification is-primary has-text-centered is-size-3 has-text-white"
-          style="padding-top: 3rem; padding-bottom: 1rem; color: #606ae7"
-        >
-          F.A.Q
-        </p>
-
-        <table class="table is-fullwidth is-striped has-text-white">
-          <tbody class="has-text-centred">
-            <tr>
-              <td
-                style="
-                  background-color: #4f72e6;
-                  padding-bottom: 0rem;
-                  color: #a3cef1;
-                "
-              >
-                <span class="q-style has-text-weight-light">Q. </span>
-                <span class="has-text-weight-bold">
-                  How much will it cost me to participate in The Women
-                  hackathon?
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  background-color: #4f72e6;
-                  padding-top: 0rem;
-                  border-top-style: 0rem;
-                  color: #a3cef1;
-                "
-              >
-                <span class="a-style has-text-weight-light">A. </span>For Women
-                Hackathon the registration fee is ₹100 only(P.S: You do NOT have
-                to pay the other Rs 350 for this event). Food and refreshments
-                will also be provided.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="table is-fullwidth is-striped has-text-white">
-          <tbody class="has-text-centred">
-            <tr>
-              <td
-                style="
-                  background-color: #4f72e6;
-                  padding-bottom: 0rem;
-                  color: #a3cef1;
-                "
-              >
-                <span class="q-style has-text-weight-light">Q. </span>
-                <span class="has-text-weight-bold"
-                  >Will Accommodation be provided for the participants?</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  background-color: #4f72e6;
-                  padding-top: 0rem;
-                  border-top-style: 0rem;
-                  color: #a3cef1;
-                "
-              >
-                <span class="a-style has-text-weight-light">A. </span>
-                Accommodation will be provided but participants will have to pay
-                a nominal fee of ₹100 for it.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="table is-fullwidth is-striped has-text-white">
-          <tbody class="has-text-centred">
-            <tr>
-              <td class="td-style">
-                <span class="q-style has-text-weight-light">Q. </span
-                ><span class="has-text-weight-bold">
-                  Can we take part in the Women Hackathon as a team?</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td class="td-style">
-                <span class="a-style has-text-weight-light">A. </span> On the
-                2nd Day of the event you can take part in the activities either
-                as a team or individually.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="table is-fullwidth is-striped has-text-white">
-          <tbody class="has-text-centred">
-            <tr>
-              <td class="td-style">
-                <span class="q-style has-text-weight-light">Q. </span>
-                <span class="has-text-weight-bold">
-                  Will I have to pay ₹350 ,if I attend just one day of the
-                  programme?</span
-                >
-              </td>
-            </tr>
-            <tr>
-              <td class="td-style">
-                <span class="a-style has-text-weight-light">A. </span> Yes, you
-                will have to pay ₹350 even if you attend the event for only 1
-                day.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="table is-fullwidth is-striped has-text-white">
-          <tbody class="has-text-centred">
-            <tr>
-              <td class="td-style">
-                <span class="q-style has-text-weight-light">Q. </span>
-                <span class="has-text-weight-bold">
-                  How do I reach Fisat via Bus/Train?
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="td-style">
-                <span class="a-style has-text-weight-light">A. </span>
-                <span>
-                  You can either take the bus or train to arrive at Angamaly.
-                  From there are multiple possibilities :
-                  <div class="content">
-                    <ul>
-                      <li>
-                        Take an auto-rikshaw that will take you to FISAT for
-                        about ₹150-180.
-                      </li>
-                      <li>Take a private bus that goes directly to FISAT.</li>
-                      <li>Take a private bus to Mookkannoor and :</li>
-                      <ul>
-                        <li>Walk for 15 minutes to FISAT.</li>
-                        <li>
-                          Take an auto-rikshaw from Mookkannoor to FISAT for
-                          about ₹50.
-                        </li>
-                      </ul>
-                    </ul>
-                  </div>
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section
-      id="workshop_schedule"
-      style="background: #ecf0fa; padding-bottom: 3rem"
-    >
-      <div class="container">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-bottom: 1rem; padding-top: 3rem"
-        >
-          Workshop Schedule
-        </div>
-
-        <div class="card is-fullwidth">
-          <header class="card-header">
-            <p class="card-header-title">
-              Day 1 - 19<sup>th</sup> February 2019
-            </p>
-            <a class="card-header-icon card-toggle">
-              <i class="fa fa-angle-down"></i>
-            </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="tile is-ancestor is-vertical">
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">09:30am - 10:15am</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Big Data and Hadoop Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">10:15am - 11:00am</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Big Data and Hadoop Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Go Programming Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">11:00am - 11:15am</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">Tea Break</p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">11:15am - 01:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Big Data and Hadoop Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Go Programming Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">01:15pm - 01:45pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">Lunch Break</p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">01:45pm - 03:00pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Big Data and Hadoop Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Go Programming Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">03:00pm - 03:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-6">
-                    <p class="subtitle has-text-centered">
-                      Tea Break for Introduction to Big Data and Hadoop Workshop
-                      and Go Programming Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">03:15pm - 04:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Big Data and Hadoop Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Go Programming Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">04:15pm - 04:30pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Tea Break for Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">04:30pm - 06:00pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card is-fullwidth">
-          <header class="card-header">
-            <p class="card-header-title">
-              Day 2 - 20<sup>th</sup> February 2019
-            </p>
-            <a class="card-header-icon card-toggle">
-              <i class="fa fa-angle-down"></i>
-            </a>
-          </header>
-          <div class="card-content is-hidden">
-            <div class="content">
-              <div class="tile is-ancestor is-vertical">
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">09:30am - 10:00am</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Docker and Kubernetes Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Machine Leraning using Apache Spark
-                      Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">10:00am - 11:30am</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Docker and Kubernetes Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Machine Leraning using Apache Spark
-                      Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                  <div class="title is-child box">
-                    <p class="subtitle has-text-centered">Inauguration</p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">11:30am - 11:45am</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">Tea Break</p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">11:45am - 01:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Docker and Kuberenetes Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Machine Leraning using Apache Spark
-                      Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">01:15pm - 01:45pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">Lunch Break</p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">01:45pm - 03:00pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Docker and Kuberenetes Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Machine Leraning using Apache Spark
-                      Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">03:00pm - 03:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-6">
-                    <p class="subtitle has-text-centered">
-                      Tea Break for Introduction to Docker and Kuberenetes
-                      Workshop and Introduction to Machine Leraning using Apache
-                      Spark Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">03:15pm - 04:15pm</p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Docker and Kuberenetes Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box is-3">
-                    <p class="subtitle has-text-centered">
-                      Introduction to Machine Leraning using Apache Spark
-                      Workshop
-                    </p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">04:15pm - 04:30pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Tea Break for Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-
-                <div class="tile is-parent">
-                  <div
-                    class="tile is-child box has-background-grey-lighter is-3"
-                  >
-                    <p class="subtitle has-text-centered">04:30pm - 06:00pm</p>
-                  </div>
-                  <div class="tile is-child box">
-                    <p class="subtitle has-text-centered">
-                      Women Hackathon Workshop
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="venue">
-      <div class="container">
-        <div
-          class="title has-text-centered"
-          style="color: #606ae7; padding-top: 4rem"
-        >
-          Venue
-        </div>
-        <div class="columns is-vcentered">
-          <div class="column is-half" style="padding-top: 3rem">
-            <!--<p class="has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">Venue</p>-->
-            <p class="is-size-4 has-text-centered" style="padding-top: 1rem">
-              Federal Institute of Science and Technology<br />
-              Hormis Nagar, Mookkannoor<br />
-              Angamaly, Kerala-683577
-            </p>
-
-            <p class="is-size-4 has-text-centered" style="padding-bottom: 3rem">
-              <a href="http://fisat.ac.in/pages/conveyance-facilities"
-                >Click here for conveyance details.</a
-              >
-            </p>
-          </div>
-
-          <div class="column is-half" style="padding-top: 3rem">
-            <div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="padding-bottom: 3rem; background: #ecf0fa">
-      <p
-        class="bd-notification is-primary has-text-centered is-size-3"
-        style="padding-top: 3rem; color: #606ae7"
-      >
-        Contact
-      </p>
-      <p
-        class="has-text-centered"
-        style="padding-bottom: 1rem; padding-top: 1rem"
-      >
-        <i class="far fa-envelope"></i> ffsc@fisat.ac.in
-      </p>
-      <p class="has-text-centered" style="padding-bottom: 1rem">
-        <i class="far fa-user"></i> Yedhin K :
-        <i class="fas fa-mobile-alt"></i> 9497656739
-      </p>
-      <p class="has-text-centered" style="padding-bottom: 1rem">
-        <i class="far fa-user"></i> Judith George :
-        <i class="fas fa-mobile-alt"></i> 8281783351
-      </p>
-      <p class="has-text-centered" style="padding-bottom: 1rem">
-        <i class="far fa-user"></i> Nandini Menon :
-        <i class="fas fa-mobile-alt"></i> 9497461138
-      </p>
-    </section>
-
-    <div class="footer">
-      <div class="inner-footer">
-        <!--  for company name and description -->
-        <div class="footer-items">
-          <h1>Company Name</h1>
-          <p>Description of any product or motto of the company.</p>
-        </div>
-
-        <!--  for quick links  -->
-        <div class="footer-items">
-          <h3>Quick Links</h3>
-          <div class="border1"></div>
-          <!--for the underline -->
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Search</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="#"><li>About</li></a>
-          </ul>
-        </div>
-
-        <!--  for some other links -->
-        <div class="footer-items">
-          <h3>Recipes</h3>
-          <div class="border1"></div>
-          <!--for the underline -->
-          <ul>
-            <a href="#"><li>Indian</li></a>
-            <a href="#"><li>Chinese</li></a>
-            <a href="#"><li>Mexican</li></a>
-            <a href="#"><li>Italian</li></a>
-          </ul>
-        </div>
-
-        <!--  for contact us info -->
-        <div class="footer-items">
-          <h3>Contact us</h3>
-          <div class="border1"></div>
-          <ul>
-            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
-            <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
-            <li>
-              <i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com
-            </li>
-          </ul>
-
-          <!--   for social links -->
-          <div class="social-media">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-google-plus-square"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!--   Footer Bottom start  -->
-      <div class="footer-bottom">Copyright &copy; Food and Burps 2020.</div>
-    </div>
-
     <script>
-      function initMap() {
-        var fisat = { lat: 10.232954, lng: 76.408754 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 16,
-          center: fisat,
-        });
-        var marker = new google.maps.Marker({ position: fisat, map: map });
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -1603,11 +225,5 @@
     <script src="js/modal.js"></script>
     <script src="js/expand-card.js"></script>
     <script src="js/particle.js"></script>
-
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap"
-    ></script>
   </body>
 </html>
