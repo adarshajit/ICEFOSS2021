@@ -25,16 +25,18 @@
     <div>
       <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
         <a href="#about">About</a>
+        <a href="#chief">Chief Guest</a>
+        <a href="#speaker">Speaker</a>
+        <a href="#contact">Contact</a>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
       <section id="home">
         <div
-          class="flex items-center justify-around flex-wrap"
+          class="flex items-center justify-around flex-wrap bg-cover"
           id="particle-js"
         >
           <figure>
@@ -57,7 +59,7 @@
         <h1></h1>
         <a href="#about"><span> </span> </a>
       </section>
-      <section class="px-6 py-4 font-serif lg:px-40">
+      <section class="px-6 py-4 font-serif lg:px-40" id="about">
         <div class="flex flex-wrap items-center justify-around">
           <div>
             <div class="max-w-xl">
@@ -104,8 +106,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="bg-blue-700 py-6 h-screen">
+      <section id="chief">
+        <div class="bg-green-600 py-6 h-screen">
           <h2 class="title titled flex justify-around text-white my-6">
             Chief Guest
           </h2>
@@ -114,28 +116,30 @@
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                 <img class="w-full" src="Assets/foss.png" alt="foss" />
                 <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Dr J Letha</div>
-                  <div class="font-bold text-xl mb-2">
+                  <div class="font-bold text-2xl mb-2">Dr J Letha</div>
+                  <div class="font-bold text-2xl mb-2">
                     Pro-Vice-Chancellor, Jain University
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="subtitled text-white p-6">
-            <div class="flex justify-center">3rd February, 11:00am</div>
-            <div class="flex justify-center">Main Seminar Hall</div>
-            <div class="flex justify-center">
+          <div class="subtitled text-white p-20">
+            <div class="flex justify-center text-2xl">
+              3rd February, 11:00am
+            </div>
+            <div class="flex justify-center text-2xl">Main Seminar Hall</div>
+            <div class="flex justify-center text-2xl">
               Federel Institute of Science And Technology
             </div>
             <div class="flex justify-center">(FISAT)</div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="speaker">
         <div class="py-4">
           <h2 class="title titled flex justify-around text-black">Speakers</h2>
-          <div class="flex justify-around">
+          <div class="flex justify-around flex-wrap">
             <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                 <img class="w-full" src="Assets/foss.png" alt="foss" />
@@ -153,7 +157,7 @@
             </div>
             <div class="md:px-2 py-2 lg:px-2 py-2 w-64">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
-                <img class="w-full" src="Assets/foss.png" alt="foss" />
+                <img class="w-full" src="Assets/sreeraj.jpg" alt="foss" />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-xl mb-2">Speaker 2</div>
                   <div class="px-6 py-4 flex justify-center">
@@ -174,7 +178,7 @@
           <h2 class="title titled flex justify-around text-black">Register</h2>
         </div>
       </section>
-      <section>
+      <section id="contact">
         <div class="bg-blue-500 text-white">
           <h2 class="title titled flex justify-around text-white">
             Contact Us
