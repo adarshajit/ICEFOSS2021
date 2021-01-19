@@ -48,16 +48,20 @@
   font-family: teko;
   text-align: center;
 }
-
+.previous:hover {
+  background-color: #14db7b;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
 .heading {
   text-align: center;
   border: 2px solid #000;
   z-index: 2;
 }
 .heading {
-  padding-top: 20px;
+  padding-top: 12px;
   color: #000;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
 }
 .heading {
@@ -449,7 +453,7 @@ li i {
 }
 
 .subtitled {
-  /* font-size: 22px !important; */
+  font-size: 22px !important;
   font-weight: 400 !important;
   line-height: 36px !important;
 }
@@ -602,7 +606,7 @@ body {
     text-align: left;
   }
   .subtitled {
-    /* font-size: 17px !important; */
+    font-size: 16px !important;
     font-weight: 400 !important;
     line-height: 36px !important;
   }
