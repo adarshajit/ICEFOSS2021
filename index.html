@@ -24,25 +24,42 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> -->
   </head>
   <body>
     <div>
       <!-- ------------------------------navbar----------------------------------------- -->
-      <div
-        class="topnav fixed w-full md:flex justify-center bg-black"
-        id="myTopnav"
-      >
-        <a href="#home" class="active hover:box-shadow">Home</a>
-        <a href="#about">About</a>
-        <a href="#speaker">Speaker</a>
-        <a href="#register">Register</a>
-        <a href="#contact">Contact</a>
-
-        <a href="javascript:void(0);" class="icon" onclick="shrink()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+      <nav>
+        <div class="logo">
+          <h4>ICEFOSS 2021</h4>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Speaker</a>
+          </li>
+          <li>
+            <a href="">Workshop</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">Register</a>
+          </li>
+        </ul>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
       <section id="home">
         <div
           class="flex items-center justify-around flex-wrap bg-cover lg:py-12"
@@ -57,7 +74,7 @@
             </h1>
             <a href="#register">
               <div class="back items-center hidden lg:block">
-                <div class="register button">
+                <div class="register button" style="font-weight: bold">
                   <p>Register</p>
                 </div>
               </div>
@@ -76,8 +93,8 @@
           style="font-family: Montserrat"
         >
           <!-- ----------------------------------------------------------------ICEFOSS------------------------------------------------------- -->
-          <div>
-            <div class="max-w-xl">
+          <div class="max-w-2xl">
+            <div>
               <h1 class="title titled">About ICEFOSS</h1>
               <h2 class="subtitled subtitle">
                 ICEFOSS is a Free Software Conference organized by FISAT Free
@@ -96,7 +113,7 @@
               Click Here
             </button>
           </div>
-          <div>
+          <div class="md:mr-24">
             <figure class="image">
               <img src="/Assets/foss.png" />
             </figure>
@@ -107,12 +124,12 @@
           class="flex flex-wrap items-center justify-around py-10"
           style="font-family: Montserrat"
         >
-          <div class="border-2">
+          <div class="border-2 lg:ml-20">
             <figure class="image max-w-2xl">
               <img src="/Assets/fisat.jpg" />
             </figure>
           </div>
-          <div class="max-w-2xl lg:max-w-2xl lg:px-10">
+          <div class="max-w-2xl lg:max-w-3xl lg:px-10">
             <h1 class="title titled">About FISAT</h1>
             <h2 class="subtitled">
               Federal Institute of Science And Technology (FISAT) was
@@ -138,7 +155,9 @@
           </div>
           <div class="flex justify-around pt-10">
             <div class="md:px-2 py-2 lg:px-2 py-2 w-72">
-              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+              <div
+                class="max-w-sm rounded overflow-hidden bg-white border-black border-4"
+              >
                 <div class="h-80">
                   <img
                     class="w-full"
@@ -146,9 +165,9 @@
                     alt="foss"
                   />
                 </div>
-                <div class="text-center py-2 subtitled">
+                <div class="text-center py-8 subtitled">
                   <div class="text-2xl md:text-4xl md:mb-2">Timothée Giet</div>
-                  <div class="text-xl md:text-2xl mb-2 p-8">
+                  <div class="text-xl md:text-2xl mb-2 py-6 px-8">
                     Graphic artist and freelancer
                   </div>
                 </div>
@@ -172,15 +191,21 @@
 
           <div class="flex justify-center flex-wrap pt-32">
             <div class="px-8 pt-2 md:w-72">
-              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+              <div
+                class="max-w-sm rounded overflow-hidden bg-white border-4 border-black"
+              >
                 <img class="w-full" src="Assets/sreeraj.jpg" alt="foss" />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-xl mb-2">Dr.Sreeraj M</div>
+                  <div class="">Assistant Professor,SREE AYYAPPA COLLEGE</div>
                 </div>
               </div>
+              <div></div>
             </div>
             <div class="px-8 pt-2 md:w-72">
-              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+              <div
+                class="max-w-sm rounded overflow-hidden bg-white border-4 border-black"
+              >
                 <img
                   class="w-full"
                   src="Assets/images_Speakers_Pankaj-ApacheML.jpg"
@@ -188,14 +213,21 @@
                 />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-xl mb-2">Pankaj Kumar</div>
+                  <div>Assistant professor, CSE FISAT</div>
+                  <div class="h-8"></div>
                 </div>
               </div>
+              <div></div>
             </div>
             <div class="px-8 pt-2 md:w-72">
-              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+              <div
+                class="max-w-sm rounded overflow-hidden bg-white border-4 border-black"
+              >
                 <img class="w-full" src="Assets/Sherfin.jpeg" alt="foss" />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-xl mb-2">Sherfin S</div>
+                  <div>Free lance consultant</div>
+                  <div class="h-8"></div>
                 </div>
               </div>
             </div>
@@ -261,7 +293,7 @@
       <!-- ----------------------------------------------------------Register------------------------------------------------------------- -->
       <section id="register">
         <div
-          class="bg-blue-500 text-black py-10"
+          class="bg-blue-500 text-black py-10 h-screen"
           style="background-color: black"
         >
           <div class="flex justify-center py-12">
@@ -269,24 +301,42 @@
               <h2 class="heading text-black bg-white">Register</h2>
             </div>
           </div>
-          <div class="text-center subtitled text-white">
-            Registration fee for the event is Rs 25(for non-fisatians) for two
-            days.
-          </div>
-          <div class="text-center subtitled text-white">
-            Pay using our UPI ID
-          </div>
-          <div class="text-center subtitled text-white">icefoss2020@apl</div>
-          <div class="flex justify-center pt-10">
-            <div class="back items-center hidden lg:block">
-              <div class="register button">
-                <a
-                  href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
-                  style="text-decoration: none; color: black"
-                >
-                  UPI icefoss2020@apl</a
-                >
+          <div class="py-20">
+            <div class="text-center subtitled text-white">
+              Registration fee for the event is Rs 25(for non-fisatians) for two
+              days.
+            </div>
+            <div class="text-center subtitled text-white">
+              Pay using our UPI ID
+            </div>
+            <div class="text-center subtitled text-white">icefoss2020@apl</div>
+            <div class="flex justify-center pt-16">
+              <div class="back items-center lg:block">
+                <div class="register">
+                  <a
+                    href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
+                    style="text-decoration: none; color: black"
+                  >
+                    UPI icefoss2020@apl</a
+                  >
+                </div>
               </div>
+            </div>
+
+            <div
+              class="flex subtitled justify-center items-center text-white pt-16"
+            >
+              After payment, click on the Register button to register by giving
+              details including payment information
+            </div>
+            <div class="flex justify-center">
+              <button
+                href="https://forms.gle/oTT9y9FbkrqTSqs9A"
+                type="button"
+                class="previous inline-flex items-center px-6 py-4 mt-6 border border-transparent rounded-3xl shadow-sm text-sm font-bold text-white bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              >
+                Register
+              </button>
             </div>
           </div>
         </div>
@@ -404,10 +454,11 @@
       }
     </script>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/navbar.js"></script>
+    <!-- <script src="js/navbar.js"></script> -->
     <script src="js/smooth_scroll.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/expand-card.js"></script>
     <script src="js/particle.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
