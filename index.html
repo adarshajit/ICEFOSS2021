@@ -6,8 +6,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="./styles.css" rel="stylesheet" />
-    <link href="./main.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/particle.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -15,10 +15,7 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -28,7 +25,11 @@
   </head>
   <body>
     <div>
-      <div class="topnav fixed w-full md:flex justify-center" id="myTopnav">
+      <!-- ------------------------------navbar----------------------------------------- -->
+      <div
+        class="topnav fixed w-full md:flex justify-center bg-black"
+        id="myTopnav"
+      >
         <a href="#home" class="active hover:box-shadow">Home</a>
         <a href="#about">About</a>
         <a href="#chief">Chief Guest</a>
@@ -52,12 +53,13 @@
             <h1 class="title inline-block align-middle flex justify-end p-2">
               ICEFOSS 2021
             </h1>
-
-            <div class="back items-center hidden lg:block">
-              <div class="register button">
-                <p>Register</p>
+            <a href="#register">
+              <div class="back items-center hidden lg:block">
+                <div class="register button">
+                  <p>Register</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -65,8 +67,13 @@
         <h1></h1>
         <a href="#about"><span> </span> </a>
       </section>
+      <!-- -----------------------------------------------------about-------------------------------------------------------- -->
       <section class="px-6 py-4 font-serif lg:px-40" id="about">
-        <div class="flex flex-wrap items-center justify-around">
+        <div
+          class="flex flex-wrap items-center justify-around"
+          style="font-family: Montserrat"
+        >
+          <!-- ----------------------------------------------------------------ICEFOSS------------------------------------------------------- -->
           <div>
             <div class="max-w-xl">
               <h1 class="title titled">About ICEFOSS</h1>
@@ -78,8 +85,9 @@
                 To know about the past conferences
               </h2>
             </div>
+            <!-- href="http://icefoss.fisat.ac.in/2017/index.html" -->
             <button
-              href="http://icefoss.fisat.ac.in/2017/index.html"
+              onclick="location.href='previous.html'"
               type="button"
               class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
             >
@@ -92,7 +100,11 @@
             </figure>
           </div>
         </div>
-        <div class="flex flex-wrap items-center justify-around py-10">
+        <!-- ----------------------------------------------------------------FISAT------------------------------------------------------- -->
+        <div
+          class="flex flex-wrap items-center justify-around py-10"
+          style="font-family: Montserrat"
+        >
           <div class="border-2">
             <figure class="image max-w-2xl">
               <img src="/Assets/fisat.png" />
@@ -112,13 +124,15 @@
           </div>
         </div>
       </section>
+      <!-- ----------------------------------------------------------------Chief Guest------------------------------------------------------- -->
       <section id="chief">
-        <div class="py-16 px-8 h-screen chief">
-          <h2 class="title titled flex justify-around text-black">
-            Chief Guest
-          </h2>
-
-          <div class="flex justify-around pt-10">
+        <div class="py-16 px-8 h-screen" style="background-color: #14db7b">
+          <div class="flex justify-center">
+            <div class="back1">
+              <h2 class="heading text-black bg-yellow-200">Chief Guest</h2>
+            </div>
+          </div>
+          <div class="flex justify-around pt-32">
             <div class="md:px-2 py-2 lg:px-2 py-2 w-72">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                 <img
@@ -137,23 +151,69 @@
           </div>
         </div>
       </section>
+
+      <!-- ----------------------------------------------------------------Speakers------------------------------------------------------- -->
       <section id="speaker">
         <div class="py-16 py-20 item-center min-h-screen bg-yellow-200">
-          <div>
-            <h2 class="title titled flex justify-around text-black pb-16">
-              Speakers
-            </h2>
-          </div>
           <div class="flex justify-center">
-            <div class="px-8 md:w-72">
+            <div class="back1" style="background-color: black">
+              <h2 class="text-black bg-white heading">Speakers</h2>
+            </div>
+          </div>
+
+          <div class="flex justify-center flex-wrap pt-32">
+            <div class="px-8 pt-2 md:w-72">
               <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
                 <img class="w-full" src="Assets/sreeraj.jpg" alt="foss" />
                 <div class="text-center py-2 subtitled">
                   <div class="font-bold text-xl mb-2">Dr.Sreeraj M</div>
                   <div class="px-6 py-4 flex justify-center">
                     <button class="border-none">
-                      <a href="http://fisat.ac.in/staff-profile.php?fid=114">
-                        <i class="fas fa-university fa-lg"></i>
+                      <a
+                        href="http://fisat.ac.in/staff-profile.php?fid=114"
+                        class="hover:bg-blue-500"
+                      >
+                        Know more
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-8 pt-2 md:w-72">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img
+                  class="w-full"
+                  src="Assets/images_Speakers_Pankaj-ApacheML.jpg"
+                  alt="foss"
+                />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-xl mb-2">Pankaj Kumar</div>
+                  <div class="px-6 py-4 flex justify-center">
+                    <button class="border-none">
+                      <a
+                        href="http://fisat.ac.in/staff-profile.php?fid=114"
+                        class="hover:bg-blue-500"
+                      >
+                        Know more
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-8 pt-2 md:w-72">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img class="w-full" src="Assets/Sherfin.jpeg" alt="foss" />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-xl mb-2">Sherfin S</div>
+                  <div class="px-6 py-4 flex justify-center">
+                    <button class="border-none">
+                      <a
+                        href="http://fisat.ac.in/staff-profile.php?fid=114"
+                        class="hover:bg-blue-500"
+                      >
+                        Know more
                       </a>
                     </button>
                   </div>
@@ -163,42 +223,137 @@
           </div>
         </div>
       </section>
+      <!----------------------------------------------------------------Guest speaker--------------------------------------------------------->
+      <section>
+        <div class="py-16 px-8 h-screen" style="background-color: #14db7b">
+          <div class="flex justify-center">
+            <div class="back1">
+              <h2 class="heading text-black bg-yellow-200">Chief Guest</h2>
+            </div>
+          </div>
+          <div class="flex justify-around pt-32">
+            <div class="md:px-2 py-2 lg:px-2 py-2 w-72">
+              <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg">
+                <img
+                  class="w-full"
+                  src="Assets/220px-Timothée_Giet.jpg"
+                  alt="foss"
+                />
+                <div class="text-center py-2 subtitled">
+                  <div class="font-bold text-2xl mb-2">Timothée Giet</div>
+                  <div class="font-bold text-2xl mb-2">
+                    Graphic artist and freelancer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------------workshop------------------------------------------------------- -->
+      <section class="px-6 py-4 font-serif lg:px-40" id="Workshops">
+        <div class="pb-20">
+          <div class="flex justify-center py-20">
+            <div class="back1" style="background-color: black">
+              <h2 class="heading text-black" style="background-color: white">
+                Workshop
+              </h2>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-around"
+            style="font-family: Montserrat"
+          >
+            <div>
+              <div class="max-w-xl">
+                <h1 class="title titled">Machine Learning</h1>
+                <h2 class="subtitled subtitle">
+                  Workshop on Introduction to machine learning focuses on
+                  helping the participants learn the basics of using machine
+                  learning for image processing applications. During this
+                  hands-on workshop the participants will be given step by step
+                  guidance on solving real world using machine learning.
+                </h2>
+              </div>
+            </div>
+            <div>
+              <figure class="image">
+                <img src="/Assets/ml.png" />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-around py-10"
+            style="font-family: Montserrat"
+          >
+            <div class="border-2">
+              <figure class="image max-w-2xl">
+                <img src="/Assets/fisat.png" />
+              </figure>
+            </div>
+            <div class="max-w-xl lg:max-w-lg lg:px-10">
+              <h1 class="title titled">Game Jam</h1>
+              <h2 class="subtitled">
+                Federal Institute of Science And Technology (FISAT) was
+                established in 2002 under the aegis of Federal Bank Officers'
+                Association Educational Society (FBOAES). The college has carved
+                a niche for itself in education world, eloquently demonstrated
+                by the flying colors attained by its students in academics,
+                placements as well as in extra curricular and co-curricular
+                activities.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="register">
         <div
-          class="bg-blue-500 text-black py-6 h-80"
-          style="background-color: #14db7b"
+          class="bg-blue-500 text-black py-6"
+          style="background-color: black"
         >
-          <h2 class="title titled flex justify-around text-black">Register</h2>
-          <div class="text-center subtitled">
+          <div class="flex justify-center">
+            <div class="back1">
+              <h2
+                class="heading text-white"
+                style="
+                  background-color: white;
+                  color: black;
+                  border: 3px solid #000;
+                "
+              >
+                Register
+              </h2>
+            </div>
+          </div>
+          <div class="text-center subtitled text-white">
             Registration fee for the event is Rs 50(for non-fisatians) for two
             days.
           </div>
-          <div class="text-center subtitled">Pay using our UPI ID</div>
-          <div class="text-center subtitled">icefoss2020@apl</div>
-          <div class="flex justify-center">
-            <button
-              class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-              style="
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                background-color: #3273dc;
-              "
-            >
-              <a
-                href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
-                style="text-decoration: none; color: #fff"
-              >
-                UPI icefoss2020@apl</a
-              >
-            </button>
+          <div class="text-center subtitled text-white">
+            Pay using our UPI ID
+          </div>
+          <div class="text-center subtitled text-white">icefoss2020@apl</div>
+          <div class="flex justify-center pt-10">
+            <div class="back items-center hidden lg:block">
+              <div class="register button">
+                <a
+                  href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
+                  style="text-decoration: none; color: black"
+                >
+                  UPI icefoss2020@apl</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact">
-        <div class="bg-yellow-200 text-black py-4 w-full h-3/4">
-          <h2 class="title titled flex justify-around text-black">
-            Contact Us
-          </h2>
+        <div class="bg-yellow-200 text-black pb-20 pt-10 w-full">
+          <div class="flex justify-center pb-16">
+            <div class="back1" style="background-color: black">
+              <h2 class="text-black bg-white heading">Speakers</h2>
+            </div>
+          </div>
           <div class="subtitled">
             <p class="text-center">
               <i class="far fa-envelope"></i> ffsc@fisat.ac.in
@@ -220,15 +375,16 @@
         </div>
       </section>
       <section id="">
-        <div class="bg-black text-white h-52 py-4 items-center">
+        <div class="bg-black text-white h-72 py-4 items-center">
           <div class="text-center subtitled py-4">Made with Tailwind</div>
           <div class="text-center subtitled">
             Designed and Created by
             <a href="https://www.linkedin.com/in/naveen-b-jacob-229a81182/"
               >Adarsh Ajit</a
-            >, <a>Paul Elias Sojan</a>,<a
-              href="https://www.linkedin.com/in/naveen-b-jacob-229a81182/"
-            >
+            >,
+            <a href="https://www.linkedin.com/in/paul-elias-sojan/"
+              >Paul Elias Sojan</a
+            >,<a href="https://www.linkedin.com/in/naveen-b-jacob-229a81182/">
               Naveen B Jacob</a
             >
           </div>

@@ -9,6 +9,7 @@
   color: white;
   font-size: 7rem;
   top: 35%;
+  font-family: teko;
   left: 35%;
 
   font-weight: 400;
@@ -42,32 +43,36 @@
   z-index: 2;
 }
 .heading {
-  width: 250px;
-  height: 60px;
-
+  width: 350px;
+  height: 80px;
+  font-family: teko;
   text-align: center;
-  border-radius: 25px;
 }
 
 .heading {
-  width: 250px;
-  height: 60px;
-
+  width: 350px;
+  height: 80px;
   text-align: center;
-  border-radius: 25px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   z-index: 2;
 }
 .heading {
-  padding-top: 12px;
+  padding-top: 20px;
   color: #000;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 .heading {
   transition: 0.3s ease-in-out;
-  cursor: pointer;
+
   transform: translate(-5px, -10px);
+}
+.back1 {
+  width: 350px;
+  height: 80px;
+  background-color: #fff;
+
+  z-index: 2;
 }
 #home .hero-body {
   display: flex;
@@ -79,7 +84,7 @@
 }
 .back {
   width: 250px;
-  margin-left: 200px;
+  margin-left: px;
   height: 60px;
   background-color: #fff;
   border-radius: 25px;
@@ -218,7 +223,37 @@
     max-width: 300px;
     align-items: center;
   }
+  .back1 {
+    width: 250px;
+    height: 60px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .heading {
+    width: 250px;
+    height: 60px;
+    font-family: teko;
+    text-align: center;
+  }
 
+  .heading {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #000;
+    z-index: 2;
+  }
+  .heading {
+    padding-top: 10px;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading {
+    transition: 0.3s ease-in-out;
+
+    transform: translate(-5px, -10px);
+  }
   .infog {
     position: relative;
     top: -70px;
@@ -417,6 +452,7 @@ li i {
 /* for tablet mode view */
 
 .titled {
+  font-family: teko;
   font-size: 58px !important;
   font-weight: 400 !important;
   line-height: 64px !important;
@@ -525,12 +561,12 @@ li i {
 }
 body {
   margin: 0;
-  font-family: "Montserrat";
 }
 
 .topnav {
   overflow: hidden;
   background-color: black;
+  z-index: 1000;
 }
 
 .topnav a {
