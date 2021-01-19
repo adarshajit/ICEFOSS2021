@@ -89,7 +89,12 @@
   #home .title {
     font-size: 5rem;
   }
+  #chief img {
+    width: 1000%;
+    
+  }
 }
+
 .register {
   padding-top: 12px;
   color: #000;
@@ -132,8 +137,8 @@
   left: 40%;
   font-size: 40px;
 }
-.chief {
-  background-color: #14db7b;
+#chief {
+  margin-top: 100px;
 }
 .cguest {
   position: relative;
@@ -420,6 +425,7 @@ li i {
   font-size: 58px !important;
   font-weight: 400 !important;
   line-height: 64px !important;
+  
 }
 
 .subtitled {
