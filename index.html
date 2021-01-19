@@ -30,28 +30,28 @@
   <body>
     <div>
       <!-- ------------------------------navbar----------------------------------------- -->
-      <nav>
+      <nav class="w-full">
         <div class="logo">
           <h4>ICEFOSS 2021</h4>
         </div>
         <ul class="nav-links">
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Speaker</a>
+            <a href="#speaker">Speaker</a>
           </li>
           <li>
-            <a href="">Workshop</a>
+            <a href="#Workshops">Workshop</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="">Register</a>
+            <a href="#register">Register</a>
           </li>
         </ul>
         <div class="burger" id="burger">
@@ -62,7 +62,7 @@
       </nav>
       <section id="home">
         <div
-          class="flex items-center justify-around flex-wrap bg-cover lg:py-12"
+          class="flex items-center justify-around flex-wrap bg-cover lg:py-24"
           id="particle-js"
         >
           <figure>
@@ -72,17 +72,19 @@
             <h1 class="title inline-block align-middle flex justify-end p-2">
               ICEFOSS 2021
             </h1>
-            <a href="#register">
-              <div class="back items-center hidden lg:block">
-                <div class="register button" style="font-weight: bold">
-                  <p>Register</p>
+            <div class="flex justify-center">
+              <a href="#register">
+                <div class="back items-center hidden lg:block">
+                  <div class="register button">
+                    <p>Register</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="demo hidden md:block" id="section03">
+      <section class="demo" id="section03">
         <h1></h1>
         <a href="#about"><span> </span> </a>
       </section>
@@ -145,7 +147,7 @@
       </section>
       <!----------------------------------------------------------------Guest speaker--------------------------------------------------------->
       <section>
-        <div class="py-36 px-8 h-screen" style="background-color: #14db7b">
+        <div class="py-36 px-8" style="background-color: #14db7b">
           <div class="flex justify-center py-8">
             <div class="back1">
               <h2 class="heading text-black" style="background-color: #fbcd33">
@@ -153,7 +155,7 @@
               </h2>
             </div>
           </div>
-          <div class="flex justify-around pt-10">
+          <div class="flex justify-around pb-16">
             <div class="md:px-2 py-2 lg:px-2 py-2 w-72">
               <div
                 class="max-w-sm rounded overflow-hidden bg-white border-black border-4"
@@ -196,7 +198,7 @@
               >
                 <img class="w-full" src="Assets/sreeraj.jpg" alt="foss" />
                 <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Dr.Sreeraj M</div>
+                  <div class="font-bold text-2xl mb-2">Dr.Sreeraj M</div>
                   <div class="">Assistant Professor,SREE AYYAPPA COLLEGE</div>
                 </div>
               </div>
@@ -212,7 +214,7 @@
                   alt="foss"
                 />
                 <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Pankaj Kumar</div>
+                  <div class="font-bold text-2xl mb-2">Pankaj Kumar</div>
                   <div>Assistant professor, CSE FISAT</div>
                   <div class="h-8"></div>
                 </div>
@@ -225,7 +227,7 @@
               >
                 <img class="w-full" src="Assets/Sherfin.jpeg" alt="foss" />
                 <div class="text-center py-2 subtitled">
-                  <div class="font-bold text-xl mb-2">Sherfin S</div>
+                  <div class="font-bold text-2xl mb-2">Sherfin S</div>
                   <div>Free lance consultant</div>
                   <div class="h-8"></div>
                 </div>
@@ -293,10 +295,10 @@
       <!-- ----------------------------------------------------------Register------------------------------------------------------------- -->
       <section id="register">
         <div
-          class="bg-blue-500 text-black py-10 h-screen"
+          class="bg-blue-500 text-black py-10"
           style="background-color: black"
         >
-          <div class="flex justify-center py-12">
+          <div class="flex justify-center py-4">
             <div class="back1">
               <h2 class="heading text-black bg-white">Register</h2>
             </div>
@@ -311,7 +313,7 @@
             </div>
             <div class="text-center subtitled text-white">icefoss2020@apl</div>
             <div class="flex justify-center pt-16">
-              <div class="back items-center lg:block">
+              <div class="back items-center hidden lg:block">
                 <div class="register">
                   <a
                     href="upi://pay?pa=icefoss2020@apl&pn=ICEFOSS 2020&cu=INR"
@@ -324,19 +326,22 @@
             </div>
 
             <div
-              class="flex subtitled justify-center items-center text-white pt-16"
+              class="flex subtitled justify-center items-center text-white px-4 md:pt-16"
             >
               After payment, click on the Register button to register by giving
               details including payment information
             </div>
-            <div class="flex justify-center">
-              <button
-                href="https://forms.gle/oTT9y9FbkrqTSqs9A"
-                type="button"
-                class="previous inline-flex items-center px-6 py-4 mt-6 border border-transparent rounded-3xl shadow-sm text-sm font-bold text-white bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-              >
-                Register
-              </button>
+            <div class="flex justify-center py-6">
+              <div class="back items-center hidden lg:block">
+                <div class="register" style="background-color: #ffcc29">
+                  <a
+                    href="https://forms.gle/oTT9y9FbkrqTSqs9A"
+                    style="text-decoration: none; color: black"
+                  >
+                    Register here</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
