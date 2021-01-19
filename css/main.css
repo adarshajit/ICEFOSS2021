@@ -43,17 +43,15 @@
   z-index: 2;
 }
 .heading {
-  width: 350px;
-  height: 80px;
+  width: 400px;
+  height: 90px;
   font-family: teko;
   text-align: center;
 }
 
 .heading {
-  width: 350px;
-  height: 80px;
   text-align: center;
-  border: 1px solid #000;
+  border: 2px solid #000;
   z-index: 2;
 }
 .heading {
@@ -68,10 +66,11 @@
   transform: translate(-5px, -10px);
 }
 .back1 {
-  width: 350px;
-  height: 80px;
+  width: 410px;
+  height: 95px;
   background-color: #fff;
-
+  border: 2px solid #000;
+  margin-left: 4px;
   z-index: 2;
 }
 #home .hero-body {
@@ -84,7 +83,6 @@
 }
 .back {
   width: 250px;
-  margin-left: px;
   height: 60px;
   background-color: #fff;
   border-radius: 25px;
@@ -350,10 +348,12 @@ a.navbar-item:hover {
 /* FOOTER */
 .footer {
   width: 100%;
-  background: #00121b;
+  background: #000000;
   display: block;
 }
-
+.hoverclass:hover {
+  color: #14db7b;
+}
 .inner-footer {
   width: 95%;
   margin: auto;
@@ -361,11 +361,10 @@ a.navbar-item:hover {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer-items {
-  width: 25%;
   padding: 10px 20px;
   box-sizing: border-box;
   color: #fff;
@@ -380,15 +379,6 @@ a.navbar-item:hover {
 
 .footer-items h1 {
   color: #fff;
-}
-
-.border1 {
-  height: 3px;
-  width: 40px;
-  background: #ff9800;
-  color: #ff9800;
-  background-color: #ff9800;
-  border: 0px;
 }
 
 ul {
@@ -406,7 +396,7 @@ ul a {
 }
 
 ul a:hover {
-  color: #ff9800;
+  color: #14db7b;
 }
 
 ul li {
@@ -443,9 +433,9 @@ li i {
 
 .footer-bottom {
   padding: 10px;
-  background: #00121b;
+  background: #000000;
   color: #fff;
-  font-size: 12px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -459,7 +449,7 @@ li i {
 }
 
 .subtitled {
-  font-size: 20px !important;
+  /* font-size: 22px !important; */
   font-weight: 400 !important;
   line-height: 36px !important;
 }
@@ -612,7 +602,7 @@ body {
     text-align: left;
   }
   .subtitled {
-    font-size: 17px !important;
+    /* font-size: 17px !important; */
     font-weight: 400 !important;
     line-height: 36px !important;
   }
