@@ -2,20 +2,20 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
-   @import url(https://fonts.googleapis.com/css?family=Teko:300,400,500,600);
-   
-   /* =============================================================================
+@import url(https://fonts.googleapis.com/css?family=Teko:300,400,500,600);
+
+/* =============================================================================
       My CSS
       ========================================================================== */
-   
-   /* remove canvas default margin */
-   canvas{
-       display:block;
-       vertical-align:bottom;
-   }
-   
-   #particles-js{
-       width:100vh;
-       height:100vh;
-   }
-   
+
+/* remove canvas default margin */
+canvas {
+  display: block;
+  vertical-align: bottom;
+  position: absolute;
+}
+
+#particles-js {
+  width: 100vh;
+  height: 100vh;
+}
