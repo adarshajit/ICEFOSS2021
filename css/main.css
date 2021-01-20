@@ -179,9 +179,18 @@ nav {
   border-radius: 25px;
   border: 2px solid #000;
   z-index: 30;
+  padding-top: 8px;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translate(-5px, -10px);
   border-radius: 25px;
 }
-
+.register:hover {
+  transform: translate(0px, 0px);
+}
 .heading {
   width: 400px;
   height: 90px;
@@ -237,22 +246,6 @@ nav {
     font-size: 5rem;
   }
 }
-.register {
-  padding-top: 8px;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 1.5px;
-}
-
-.register {
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  transform: translate(-5px, -10px);
-}
-
-.register:hover {
-  transform: translate(0px, 0px);
-}
 
 .grid-left {
   display: flex;
@@ -306,17 +299,32 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
   }
-
+  .register {
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-family: teko;
+    background-color: #14db7b;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #000;
+    z-index: 30;
+    padding-top: 8px;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transform: translate(-5px, -10px);
+    border-radius: 25px;
+  }
   .grid-left {
     display: flex;
     margin-left: 70px;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 250px;
-  }
-
-  .register {
-    margin-left: 500px !important;
   }
 
   .grid-left h1 {
